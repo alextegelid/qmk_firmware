@@ -6,6 +6,9 @@
 #define TABL LAG(KC_LEFT)
 #define TABR LAG(KC_RGHT)
 
+#define NEXTWIN LGUI(SE_RABK)
+#define PREVWIN LGUI(SE_LABK)
+
 enum keycodes {
     // Custom oneshot mod implementation with no timers.
     OS_SHFT = SAFE_RANGE,
@@ -13,7 +16,7 @@ enum keycodes {
     OS_ALT,
     OS_CMD,
 
-    SW_WIN,  // Switch to next window         (cmd-tab)
+    SW_APP,  // Switch to next app         (cmd-tab)
     SW_LANG, // Switch to next input language (ctl-spc)
 };
 
@@ -52,8 +55,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 	),
 	[5] = LAYOUT_split_3x5_2(
 		KC_TRNS, KC_TRNS, TABL, TABR, KC_TRNS,                              KC_TRNS, KC_F7, KC_F8, KC_F9, KC_F10,
-		KC_TRNS, KC_NO, LCTL(KC_LALT), SW_WIN, KC_TRNS,                     KC_TRNS, KC_F4, KC_F5, KC_F6, KC_F11,
-		KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,                        KC_TRNS, KC_F1, KC_F2, KC_F3, KC_F12,
+		KC_TRNS, KC_NO, LCTL(KC_LALT), SW_APP, KC_TRNS,                     KC_TRNS, KC_F4, KC_F5, KC_F6, KC_F11,
+		KC_TRNS, KC_TRNS, PREVWIN, NEXTWIN, KC_TRNS,                        KC_TRNS, KC_F1, KC_F2, KC_F3, KC_F12,
 		KC_TRNS, KC_TRNS,                                                   KC_TRNS, KC_TRNS
 	),
 	[6] = LAYOUT_split_3x5_2(
@@ -76,11 +79,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 	)
 };
 
-bool sw_win_active = false;
+bool sw_app_active = false;
 
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
     update_swapper(
-        &sw_win_active, KC_LGUI, KC_TAB, SW_WIN,
+        &sw_app_active, KC_LGUI, KC_TAB, SW_APP,
         keycode, record
     );
 
