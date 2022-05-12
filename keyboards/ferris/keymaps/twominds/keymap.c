@@ -1,7 +1,7 @@
 #include QMK_KEYBOARD_H
 #include "keymap_swedish_pro_osx_iso.h"
 
-#include "users/callum/swapper.h"
+#include "swapper.h"
 
 #define TABL LAG(KC_LEFT)
 #define TABR LAG(KC_RGHT)

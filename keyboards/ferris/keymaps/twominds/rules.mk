@@ -1,2 +1,2 @@
 BOOTLOADER = atmel-dfu
-SRC += users/callum/swapper.c
+SRC += swapper.c
