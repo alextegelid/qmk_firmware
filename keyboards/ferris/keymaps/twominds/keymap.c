@@ -51,7 +51,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 		SE_SLSH, SE_COLN, SE_LABK, SE_RABK, SE_SCLN,                        _______, _______, _______, SE_ARNG, SE_ADIA,
 		SE_LCBR, SE_RCBR, SE_LPRN, SE_RPRN, SE_AT,                          _______, XXXXXXX, SE_EQL,  SE_PLUS, SE_PERC,
 		_______, SE_EXLM, SE_LBRC, SE_RBRC, SE_QUES,                        _______, _______, _______, _______, _______,
-		                           _______, KC_VOLD,                        KC_VOLU, _______
+		                           _______, _______,                        KC_VOLD, KC_VOLU
 	),
 	[5] = LAYOUT_split_3x5_2(
 		_______, _______, TABL,          TABR,    _______,                  _______, KC_F7, KC_F8, KC_F9, KC_F10,
