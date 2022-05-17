@@ -5,11 +5,17 @@
 
 #include "capsword.c"
 
+// Win and tab switches
 #define TABL LAG(KC_LEFT)
 #define TABR LAG(KC_RGHT)
-
 #define NEXTWIN LGUI(SE_RABK)
 #define PREVWIN LGUI(SE_LABK)
+
+// Thumb keys
+#define LTHUMB1 LGUI_T(KC_ESC)
+#define LTHUMB2 KC_BSPC
+#define RTHUMB1 LT(7,KC_SPC)
+#define RTHUMB2 LGUI_T(KC_ENT)
 
 enum keycodes {
 	CAPSWORD = SAFE_RANGE,
@@ -22,10 +28,10 @@ enum keycodes {
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 	[0] = LAYOUT_split_3x5_2(
-		KC_Q,           KC_W,         KC_E,           KC_R,           KC_T,                 KC_Y,         KC_U,       KC_I,            KC_O,           KC_P,
-		LSFT_T(KC_A),   LT(5,KC_S),   LT(1,KC_D),     LT(3,KC_F),     KC_G,                 KC_H,         LT(4,KC_J), LT(2,KC_K),      LT(6,KC_L),     LSFT_T(KC_SCLN),
-		LCAG_T(KC_Z),   LCTL_T(KC_X), LALT_T(KC_C),   KC_V,           KC_B,                 KC_N,         KC_M,       LALT_T(KC_COMM), LCTL_T(KC_DOT), KC_SLSH,
-													  LGUI_T(KC_ESC), KC_BSPC,              LT(7,KC_SPC), LGUI_T(KC_ENT)
+		KC_Q,           KC_W,         KC_E,           KC_R,       KC_T,               KC_Y,    KC_U,       KC_I,            KC_O,           KC_P,
+		LSFT_T(KC_A),   LT(5,KC_S),   LT(1,KC_D),     LT(3,KC_F), KC_G,               KC_H,    LT(4,KC_J), LT(2,KC_K),      LT(6,KC_L),     LSFT_T(KC_SCLN),
+		LCAG_T(KC_Z),   LCTL_T(KC_X), LALT_T(KC_C),   KC_V,       KC_B,               KC_N,    KC_M,       LALT_T(KC_COMM), LCTL_T(KC_DOT), KC_SLSH,
+													  LTHUMB1,    LTHUMB2,            RTHUMB1, RTHUMB2
 	),
 	[1] = LAYOUT_split_3x5_2(
 		_______, _______, _______, _______, _______,                        _______, KC_BTN1, KC_MS_U, KC_BTN2, _______,
