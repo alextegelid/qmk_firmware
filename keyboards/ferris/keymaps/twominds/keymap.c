@@ -12,12 +12,7 @@
 #define PREVWIN LGUI(SE_LABK)
 
 enum keycodes {
-	// Custom oneshot mod implementation with no timers.
-	OS_SHFT = SAFE_RANGE,
 	CAPSWORD = SAFE_RANGE,
-	OS_CTRL,
-	OS_ALT,
-	OS_CMD,
 
 	SW_APP,  // Switch to next app         (cmd-tab)
 	SW_LANG, // Switch to next input language (ctl-spc)
