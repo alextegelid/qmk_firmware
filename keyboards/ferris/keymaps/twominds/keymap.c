@@ -1,4 +1,6 @@
 #include QMK_KEYBOARD_H
+#include "g/keymap_combo.h"
+
 #include "keymap_swedish_pro_osx_iso.h"
 
 #include "swapper.h"
@@ -26,10 +28,10 @@ enum layers {
 #define PREVWIN LGUI(SE_LABK)
 
 // Thumb keys
-#define LTHUMB1 LGUI_T(KC_ESC)
+#define LTHUMB1 KC_LGUI
 #define LTHUMB2 KC_BSPC
 #define RTHUMB1 LT(7,KC_SPC)
-#define RTHUMB2 LGUI_T(KC_ENT)
+#define RTHUMB2 KC_LGUI
 
 enum keycodes {
 	CAPSWORD = SAFE_RANGE,

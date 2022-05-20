@@ -1,0 +1,2 @@
+COMB(werEscape, KC_ESC, KC_E, KC_R)
+COMB(uioEnter, KC_ENT, KC_I, KC_O)
