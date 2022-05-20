@@ -86,7 +86,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 							 _______, _______,                              _______, _______
 	),
 	[NAV2] = LAYOUT_split_3x5_2(
-		_______, _______, SE_COLN, KC_ESC,   _______,                       DF(GAME),  _______, QK_BOOT, _______, KC_DEL,
+		_______, _______, SE_COLN, KC_ESC,   _______,                       DF(GAME),  _______, _______, _______, KC_DEL,
 		_______, SE_PERC, SE_SLSH, KC_ENT,   _______,                       DF(MOUSE), KC_LGUI, _______, _______, _______,
 		_______, _______, SE_QUES, SE_EXLM,  _______,                       DF(BASE),  _______, _______, _______, _______,
 								   CAPSWORD, KC_TAB,                        XXXXXXX,   _______
