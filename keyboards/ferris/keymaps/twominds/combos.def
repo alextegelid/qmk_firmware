@@ -1,4 +1,10 @@
+// Escape and enter
 COMB(werEscape, KC_ESC, KC_E, KC_R)
 COMB(uioEnter, KC_ENT, KC_U, KC_I)
 
+// Swedish å and ä
+COMB(ioArng, SE_ARNG, KC_I, KC_O)
+COMB(opAdia, SE_ADIA, KC_O, KC_P)
+
+// Bootloader combo
 COMB(vbnmBoot, QK_BOOT, KC_V, KC_B, KC_N, KC_M)

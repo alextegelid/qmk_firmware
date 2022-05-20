@@ -1,7 +1,6 @@
 #include QMK_KEYBOARD_H
-#include "g/keymap_combo.h"
-
 #include "keymap_swedish_pro_osx_iso.h"
+#include "g/keymap_combo.h"
 
 #include "swapper.h"
 
@@ -68,7 +67,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 								   _______, _______,                        _______, _______
 	),
 	[SYMB2] = LAYOUT_split_3x5_2(
-		SE_SLSH, SE_COLN, SE_LABK, SE_RABK, SE_SCLN,                        _______, _______, _______, SE_ARNG, SE_ADIA,
+		SE_SLSH, SE_COLN, SE_LABK, SE_RABK, SE_SCLN,                        _______, _______, _______, _______, _______,
 		SE_LCBR, SE_RCBR, SE_LPRN, SE_RPRN, SE_AT,                          _______, XXXXXXX, SE_EQL,  SE_PLUS, SE_PERC,
 		_______, SE_EXLM, SE_LBRC, SE_RBRC, SE_QUES,                        _______, _______, _______, _______, _______,
 								   _______, _______,                        KC_VOLD, KC_VOLU
