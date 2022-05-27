@@ -37,7 +37,6 @@ enum keycodes {
 	CAPSWORD = SAFE_RANGE,
 
 	SW_APP,  // Switch to next app         (cmd-tab)
-	SW_LANG, // Switch to next input language (ctl-spc)
 };
 
 
