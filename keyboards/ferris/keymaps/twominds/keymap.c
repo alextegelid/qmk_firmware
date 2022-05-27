@@ -9,6 +9,7 @@
 // Friendly layer names
 enum layers {
   BASE,
+  TYPE,
   MOUSE,
   NAV,
   SYMB1,
@@ -28,7 +29,7 @@ enum layers {
 
 // Thumb keys
 #define LTHUMB1 LGUI_T(KC_ESC)
-#define LTHUMB2 KC_BSPC
+#define LTHUMB2 LT(TYPE, KC_NO)
 #define RTHUMB1 LT(NAV2, KC_SPC)
 #define RTHUMB2 KC_LGUI
 
@@ -47,6 +48,12 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 		LSFT_T(KC_A), LT(FUN,KC_S), LT(MOUSE,KC_D), LT(SYMB1,KC_F), KC_G,               KC_H,    LT(SYMB2,KC_J), LT(NAV,KC_K),    LT(NUM,KC_L),   LSFT_T(KC_SCLN),
 		LCAG_T(KC_Z), LCTL_T(KC_X), LALT_T(KC_C),   KC_V,           KC_B,               KC_N,    KC_M,           LALT_T(KC_COMM), LCTL_T(KC_DOT), KC_SLSH,
 													LTHUMB1,        LTHUMB2,            RTHUMB1, RTHUMB2
+	),
+	[TYPE] = LAYOUT_split_3x5_2(
+		_______, _______, _______, _______, _______,                        _______, KC_HOME, KC_END,  KC_DEL,  KC_BSPC,
+		_______, _______, _______, _______, _______,                        _______, _______, _______, _______, _______,
+		_______, _______, _______, _______, _______,                        _______, _______, _______, _______, _______,
+								   _______, _______,                        _______, _______
 	),
 	[MOUSE] = LAYOUT_split_3x5_2(
 		_______, _______, _______, _______, _______,                        _______, KC_BTN1, KC_MS_U, KC_BTN2, _______,
