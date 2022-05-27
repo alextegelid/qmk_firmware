@@ -29,7 +29,7 @@ enum layers {
 // Thumb keys
 #define LTHUMB1 KC_LGUI
 #define LTHUMB2 KC_BSPC
-#define RTHUMB1 LT(7,KC_SPC)
+#define RTHUMB1 LT(NAV2, KC_SPC)
 #define RTHUMB2 KC_LGUI
 
 enum keycodes {
