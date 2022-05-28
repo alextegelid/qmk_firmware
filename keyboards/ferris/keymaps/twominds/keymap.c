@@ -90,3 +90,25 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 
 	return true;
 }
+
+// Specify combos that must be held for the duration of COMBO_TERM before
+// triggering (to prevent misfires when typing quickly):
+bool get_combo_must_hold(uint16_t index, combo_t *combo) {
+	switch (index) {
+		case ioArng:
+		case opAdia:
+			return true;
+	}
+	return false;
+}
+
+// Tune timings for combos
+uint16_t get_combo_term(uint16_t index, combo_t *combo) {
+	switch(index) {
+		case ioArng:
+		case opAdia:
+			return 20; // tune the COMBO_MUST_HOLD
+		default:
+			return COMBO_TERM;
+	}
+}

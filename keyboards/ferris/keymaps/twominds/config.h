@@ -51,3 +51,5 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 // Combo key configuration
 #define COMBO_VARIABLE_LEN
 #define COMBO_TERM 50
+#define COMBO_MUST_HOLD_PER_COMBO
+#define COMBO_TERM_PER_COMBO
