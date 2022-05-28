@@ -16,8 +16,8 @@ enum layers {
 // Win and tab switches
 #define TABL LAG(KC_LEFT)
 #define TABR LAG(KC_RGHT)
-#define NEXTWIN LGUI(SE_RABK)
-#define PREVWIN LGUI(SE_LABK)
+#define NEXTWIN G(SE_RABK)
+#define PREVWIN G(SE_LABK)
 
 // Thumb keys
 #define LTHUMB1 LGUI_T(KC_ESC)
