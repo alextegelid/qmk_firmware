@@ -8,9 +8,9 @@
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 	[BASE] = LAYOUT_split_3x5_2(
-		KC_Q,         KC_W,         KC_E,           KC_R,           KC_T,               KC_Y,    KC_U,           KC_I,            KC_O,           KC_P,
-		LSFT_T(KC_A), LT(FUN,KC_S), LT(MOUSE,KC_D), LT(SYMB1,KC_F), KC_G,               KC_H,    LT(SYMB2,KC_J), LT(NAV,KC_K),    LT(NUM,KC_L),   LSFT_T(KC_SCLN),
-		LCAG_T(KC_Z), LCTL_T(KC_X), LALT_T(KC_C),   KC_V,           KC_B,               KC_N,    KC_M,           LALT_T(KC_COMM), LCTL_T(KC_DOT), KC_SLSH,
+		SE_Q,         SE_W,         SE_E,           SE_R,           SE_T,               SE_Y,    SE_U,           SE_I,            SE_O,           SE_P,
+		LSFT_T(SE_A), LT(FUN,SE_S), LT(MOUSE,SE_D), LT(SYMB1,SE_F), SE_G,               SE_H,    LT(SYMB2,SE_J), LT(NAV,SE_K),    LT(NUM,SE_L),   LSFT_T(SE_ODIA),
+		LCAG_T(SE_Z), LCTL_T(SE_X), LALT_T(SE_C),   SE_V,           SE_B,               SE_N,    SE_M,           LALT_T(SE_COMM), LCTL_T(SE_DOT), SE_MINS,
 													LTHUMB1,        LTHUMB2,            RTHUMB1, RTHUMB2
 	),
 	[TYPE] = LAYOUT_split_3x5_2(
@@ -50,9 +50,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 										 _______, _______,                  _______, _______
 	),
 	[NUM] = LAYOUT_split_3x5_2(
-		KC_PSLS, KC_7, KC_8, KC_9,    KC_PPLS,                              _______, _______, _______, _______, _______,
-		KC_0,    KC_4, KC_5, KC_6,    KC_PMNS,                              _______, _______, _______, XXXXXXX, _______,
-		KC_PAST, KC_1, KC_2, KC_3,    KC_PEQL,                              _______, _______, _______, _______, _______,
+		KC_PSLS, SE_7, SE_8, SE_9,    KC_PPLS,                              _______, _______, _______, _______, _______,
+		SE_0,    SE_4, SE_5, SE_6,    KC_PMNS,                              _______, _______, _______, XXXXXXX, _______,
+		KC_PAST, SE_1, SE_2, SE_3,    KC_PEQL,                              _______, _______, _______, _______, _______,
 							 _______, _______,                              _______, _______
 	),
 	[NAV2] = LAYOUT_split_3x5_2(
