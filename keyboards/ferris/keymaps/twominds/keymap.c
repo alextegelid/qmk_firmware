@@ -11,7 +11,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 		SE_Q,         SE_W,         SE_E,           SE_R,           SE_T,               SE_Y,    SE_U,           SE_I,            SE_O,           SE_P,
 		LSFT_T(SE_A), LT(FUN,SE_S), LT(MOUSE,SE_D), LT(SYMB1,SE_F), SE_G,               SE_H,    LT(SYMB2,SE_J), LT(NAV,SE_K),    LT(NUM,SE_L),   LSFT_T(SE_ODIA),
 		LCAG_T(SE_Z), LCTL_T(SE_X), LALT_T(SE_C),   SE_V,           SE_B,               SE_N,    SE_M,           LALT_T(SE_COMM), LCTL_T(SE_DOT), SE_MINS,
-													LTHUMB1,        LTHUMB2,            RTHUMB1, RTHUMB2
+													LTHUMB2,        LTHUMB1,            RTHUMB1, RTHUMB2
 	),
 	[TYPE] = LAYOUT_split_3x5_2(
 		_______, _______, _______, _______,  _______,                       _______, KC_HOME, KC_END,  KC_DEL,  KC_BSPC,

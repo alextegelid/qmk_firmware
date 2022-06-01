@@ -20,8 +20,8 @@ enum layers {
 #define PREVWIN G(SE_LABK)
 
 // Thumb keys
-#define LTHUMB1 LGUI_T(KC_ESC)
-#define LTHUMB2 LT(TYPE, KC_NO)
+#define LTHUMB2 LGUI_T(KC_ESC)
+#define LTHUMB1 LT(TYPE, KC_NO)
 #define RTHUMB1 LT(NAV2, KC_SPC)
 #define RTHUMB2 KC_LGUI
 
