@@ -2,12 +2,12 @@
 enum layers {
   BASE,
   TYPE,
-  MOUSE,
-  NAV,
-  SYMB1,
-  SYMB2,
-  FUN,
-  NUM,
+  MOUS,
+  NAV1,
+  SYM1,
+  SYM2,
+  FUNC,
+  NUMB,
   NAV2,
   GAME,
 };
@@ -39,14 +39,14 @@ enum layers {
 
 // Base layer keys row 2
 #define BASE_A LSFT_T(SE_A)
-#define BASE_S LT(FUN,SE_S)
-#define BASE_D LT(MOUSE,SE_D)
-#define BASE_F LT(SYMB1,SE_F)
+#define BASE_S LT(FUNC,SE_S)
+#define BASE_D LT(MOUS,SE_D)
+#define BASE_F LT(SYM1,SE_F)
 #define BASE_G SE_G
 #define BASE_H SE_H
-#define BASE_J LT(SYMB2,SE_J)
-#define BASE_K LT(NAV,SE_K)
-#define BASE_L LT(NUM,SE_L)
+#define BASE_J LT(SYM2,SE_J)
+#define BASE_K LT(NAV1,SE_K)
+#define BASE_L LT(NUMB,SE_L)
 #define BASE_ODIA LSFT_T(SE_ODIA)
 
 //  Base layer keys row 3

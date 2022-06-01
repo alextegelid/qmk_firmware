@@ -19,37 +19,37 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 		_______, _______, _______, _______,  _______,                       _______, _______, _______, _______, _______,
 								   _______,  XXXXXXX,                       _______, _______
 	),
-	[MOUSE] = LAYOUT_split_3x5_2(
+	[MOUS] = LAYOUT_split_3x5_2(
 		_______, _______, _______, _______, _______,                        _______, KC_BTN1, KC_MS_U, KC_BTN2, _______,
 		_______, KC_BTN1, XXXXXXX, KC_BTN2, _______,                        _______, KC_MS_L, KC_MS_D, KC_MS_R, _______,
 		_______, _______, _______, _______, _______,                        KC_WH_L, KC_WH_U, KC_WH_D, KC_WH_R, _______,
 								   _______, _______,                        _______, _______
 	),
-	[NAV] = LAYOUT_split_3x5_2(
+	[NAV1] = LAYOUT_split_3x5_2(
 		_______, _______, KC_UP,   _______, _______,                        _______, _______, _______, _______,       _______,
 		_______, KC_LEFT, KC_DOWN, KC_RGHT, _______,                        _______, KC_LGUI, XXXXXXX, LCTL(KC_LALT), LALT(KC_LSFT),
 		_______, KC_PGUP, KC_PGDN, KC_HOME, KC_END,                         _______, _______, _______, _______,       _______,
 								   _______, _______,                        _______, _______
 	),
-	[SYMB1] = LAYOUT_split_3x5_2(
+	[SYM1] = LAYOUT_split_3x5_2(
 		_______, _______, _______, _______, _______,                        _______, SE_UNDS, SE_PIPE, SE_QUOT, _______,
 		SE_CIRC, SE_ASTR, SE_AMPR, XXXXXXX, _______,                        SE_HASH, SE_TILD, SE_SLSH, SE_DQUO, SE_DLR,
 		_______, _______, _______, _______, _______,                        _______, SE_MINS, SE_BSLS, SE_GRV,  _______,
 								   _______, _______,                        _______, _______
 	),
-	[SYMB2] = LAYOUT_split_3x5_2(
+	[SYM2] = LAYOUT_split_3x5_2(
 		SE_SLSH, SE_COLN, SE_LABK, SE_RABK, SE_SCLN,                        _______, _______, _______, _______, _______,
 		SE_LCBR, SE_RCBR, SE_LPRN, SE_RPRN, SE_AT,                          _______, XXXXXXX, SE_EQL,  SE_PLUS, SE_PERC,
 		_______, SE_EXLM, SE_LBRC, SE_RBRC, SE_QUES,                        _______, _______, _______, _______, _______,
 								   _______, _______,                        KC_VOLD, KC_VOLU
 	),
-	[FUN] = LAYOUT_split_3x5_2(
+	[FUNC] = LAYOUT_split_3x5_2(
 		_______, _______, TABL,          TABR,    _______,                  _______, KC_F7, KC_F8, KC_F9, KC_F10,
 		_______, XXXXXXX, LCTL(KC_LALT), SW_APP,  _______,                  _______, KC_F4, KC_F5, KC_F6, KC_F11,
 		_______, _______, PREVWIN,       NEXTWIN, _______,                  _______, KC_F1, KC_F2, KC_F3, KC_F12,
 										 _______, _______,                  _______, _______
 	),
-	[NUM] = LAYOUT_split_3x5_2(
+	[NUMB] = LAYOUT_split_3x5_2(
 		KC_PSLS, SE_7, SE_8, SE_9,    KC_PPLS,                              _______, _______, _______, _______, _______,
 		SE_0,    SE_4, SE_5, SE_6,    KC_PMNS,                              _______, _______, _______, XXXXXXX, _______,
 		KC_PAST, SE_1, SE_2, SE_3,    KC_PEQL,                              _______, _______, _______, _______, _______,
@@ -57,7 +57,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 	),
 	[NAV2] = LAYOUT_split_3x5_2(
 		_______, _______, SE_COLN, KC_ESC,  _______,                        DF(GAME),  _______, _______, _______, KC_DEL,
-		_______, SE_PERC, SE_SLSH, KC_ENT,  _______,                        DF(MOUSE), KC_LGUI, _______, _______, _______,
+		_______, SE_PERC, SE_SLSH, KC_ENT,  _______,                        DF(MOUS), KC_LGUI, _______, _______, _______,
 		_______, _______, SE_QUES, SE_EXLM, _______,                        DF(BASE),  _______, _______, _______, _______,
 								   _______, KC_TAB,                         XXXXXXX,   _______
 	),
