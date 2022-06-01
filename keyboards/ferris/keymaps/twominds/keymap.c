@@ -8,10 +8,10 @@
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 	[BASE] = LAYOUT_split_3x5_2(
-		SE_Q,         SE_W,         SE_E,           SE_R,           SE_T,               SE_Y,    SE_U,           SE_I,            SE_O,           SE_P,
-		LSFT_T(SE_A), LT(FUN,SE_S), LT(MOUSE,SE_D), LT(SYMB1,SE_F), SE_G,               SE_H,    LT(SYMB2,SE_J), LT(NAV,SE_K),    LT(NUM,SE_L),   LSFT_T(SE_ODIA),
-		LCAG_T(SE_Z), LCTL_T(SE_X), LALT_T(SE_C),   SE_V,           SE_B,               SE_N,    SE_M,           LALT_T(SE_COMM), LCTL_T(SE_DOT), SE_MINS,
-													LTHUMB2,        LTHUMB1,            RTHUMB1, RTHUMB2
+		BASE_Q, BASE_W, BASE_E, BASE_R,  BASE_T,             BASE_Y,  BASE_U, BASE_I,    BASE_O,   BASE_P,
+		BASE_A, BASE_S, BASE_D, BASE_F,  BASE_G,             BASE_H,  BASE_J, BASE_K,    BASE_L,   BASE_ODIA,
+		BASE_Z, BASE_X, BASE_C, BASE_V,  BASE_B,             BASE_N,  BASE_M, BASE_COMM, BASE_DOT, BASE_MINS,
+								LTHUMB2, LTHUMB1,            RTHUMB1, RTHUMB2
 	),
 	[TYPE] = LAYOUT_split_3x5_2(
 		_______, _______, _______, _______,  _______,                       _______, KC_HOME, KC_END,  KC_DEL,  KC_BSPC,
@@ -27,7 +27,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 	),
 	[NAV] = LAYOUT_split_3x5_2(
 		_______, _______, KC_UP,   _______, _______,                        _______, _______, _______, _______,       _______,
-		_______, KC_LEFT, KC_DOWN, KC_RGHT, _______,                           _______, KC_LGUI, XXXXXXX, LCTL(KC_LALT), LALT(KC_LSFT),
+		_______, KC_LEFT, KC_DOWN, KC_RGHT, _______,                        _______, KC_LGUI, XXXXXXX, LCTL(KC_LALT), LALT(KC_LSFT),
 		_______, KC_PGUP, KC_PGDN, KC_HOME, KC_END,                         _______, _______, _______, _______,       _______,
 								   _______, _______,                        _______, _______
 	),
