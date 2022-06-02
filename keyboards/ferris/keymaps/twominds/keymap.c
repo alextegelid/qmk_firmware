@@ -7,10 +7,10 @@
 #include "capsword.c"
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
-	[BASE] = LAYOUT_split_3x5_2(
-		BASE_Q, BASE_W, BASE_E, BASE_R,  BASE_T,             BASE_Y,  BASE_U, BASE_I,    BASE_O,   BASE_P,
-		BASE_A, BASE_S, BASE_D, BASE_F,  BASE_G,             BASE_H,  BASE_J, BASE_K,    BASE_L,   BASE_ODIA,
-		BASE_Z, BASE_X, BASE_C, BASE_V,  BASE_B,             BASE_N,  BASE_M, BASE_COMM, BASE_DOT, BASE_MINS,
+	[QWER] = LAYOUT_split_3x5_2(
+		QWER_Q, QWER_W, QWER_E, QWER_R,  QWER_T,             QWER_Y,  QWER_U, QWER_I,    QWER_O,   QWER_P,
+		QWER_A, QWER_S, QWER_D, QWER_F,  QWER_G,             QWER_H,  QWER_J, QWER_K,    QWER_L,   QWER_ODIA,
+		QWER_Z, QWER_X, QWER_C, QWER_V,  QWER_B,             QWER_N,  QWER_M, QWER_COMM, QWER_DOT, QWER_MINS,
 								LTHUMB2, LTHUMB1,            RTHUMB1, RTHUMB2
 	),
 	[TYPE] = LAYOUT_split_3x5_2(
@@ -58,14 +58,14 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 	[NAV2] = LAYOUT_split_3x5_2(
 		_______, _______, SE_COLN, KC_ESC,  _______,                        DF(GAME),  _______, _______, _______, KC_DEL,
 		_______, SE_PERC, SE_SLSH, KC_ENT,  _______,                        DF(MOUS), KC_LGUI, _______, _______, _______,
-		_______, _______, SE_QUES, SE_EXLM, _______,                        DF(BASE),  _______, _______, _______, _______,
+		_______, _______, SE_QUES, SE_EXLM, _______,                        DF(QWER),  _______, _______, _______, _______,
 								   _______, KC_TAB,                         XXXXXXX,   _______
 	),
 	[GAME] = LAYOUT_split_3x5_2(
 		KC_ESC,  KC_1,   KC_2, KC_3,    KC_4,                               KC_5,     KC_6,    KC_7,    KC_8,    KC_9,
 		XXXXXXX, KC_Q,   KC_W, KC_E,    KC_R,                               XXXXXXX,  XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
 		KC_LSFT, KC_A,   KC_S, KC_D,    KC_F,                               KC_F1,    KC_F2,   KC_F3,   KC_F4,   KC_F5,
-							   KC_ESC,  KC_SPC,                             DF(BASE), XXXXXXX
+							   KC_ESC,  KC_SPC,                             DF(QWER), XXXXXXX
 	)
 };
 
