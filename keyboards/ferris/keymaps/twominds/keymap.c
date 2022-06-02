@@ -62,9 +62,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                          _______, _______,                              _______, _______
   ),
   [NAV2] = LAYOUT_split_3x5_2(
-    _______, _______, SE_COLN, KC_ESC,  _______,                        DF(GAME), _______,  _______, _______, KC_VOLU,
-    _______, SE_PERC, SE_SLSH, KC_ENT,  _______,                        DF(MOUS), _______,  _______, _______, KC_VOLD,
-    _______, _______, SE_QUES, SE_EXLM, _______,                        DF(QWER), DF(COLE), _______, _______, _______,
+    _______, _______, _______, _______,  _______,                       DF(GAME), _______,  _______, _______, KC_VOLU,
+    _______, _______, _______, _______,  _______,                       DF(MOUS), _______,  _______, _______, KC_VOLD,
+    _______, _______, _______, _______,  _______,                       DF(QWER), DF(COLE), _______, _______, KC_MPLY,
                                _______, KC_TAB,                         XXXXXXX,  _______
   ),
   [GAME] = LAYOUT_split_3x5_2(
