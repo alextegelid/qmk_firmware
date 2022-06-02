@@ -32,9 +32,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                                _______, _______,                        _______, _______
   ),
   [NAV1] = LAYOUT_split_3x5_2(
-    _______, _______, KC_UP,   _______, _______,                        _______, _______, _______, _______,       _______,
-    _______, KC_LEFT, KC_DOWN, KC_RGHT, _______,                        _______, KC_LGUI, XXXXXXX, LGUI(KC_LALT), LALT(KC_LSFT),
-    _______, KC_PGUP, KC_PGDN, KC_HOME, KC_END,                         _______, _______, _______, _______,       _______,
+    _______, _______, KC_UP,   _______, _______,                        _______, _______, _______, _______,    _______,
+    _______, KC_LEFT, KC_DOWN, KC_RGHT, _______,                        _______, KC_LGUI, XXXXXXX, G(KC_LALT), A(KC_LSFT),
+    _______, KC_PGUP, KC_PGDN, KC_HOME, KC_END,                         _______, _______, _______, _______,    _______,
                                _______, _______,                        _______, _______
   ),
   [SYM1] = LAYOUT_split_3x5_2(
@@ -50,10 +50,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                                _______, _______,                        _______, _______
   ),
   [FUNC] = LAYOUT_split_3x5_2(
-    _______, _______, TABL,          TABR,    _______,                  _______, KC_F7, KC_F8, KC_F9, KC_F10,
-    _______, XXXXXXX, LCTL(KC_LALT), SW_APP,  _______,                  _______, KC_F4, KC_F5, KC_F6, KC_F11,
-    _______, _______, PREVWIN,       NEXTWIN, _______,                  _______, KC_F1, KC_F2, KC_F3, KC_F12,
-                                     _______, _______,                  _______, _______
+    _______, _______, TABL,       TABR,    _______,                     _______, KC_F7, KC_F8, KC_F9, KC_F10,
+    _______, XXXXXXX, C(KC_LALT), SW_APP,  _______,                     _______, KC_F4, KC_F5, KC_F6, KC_F11,
+    _______, _______, PREVWIN,    NEXTWIN, _______,                     _______, KC_F1, KC_F2, KC_F3, KC_F12,
+                                  _______, _______,                     _______, _______
   ),
   [NUMB] = LAYOUT_split_3x5_2(
     KC_PSLS, SE_7, SE_8, SE_9,    KC_PPLS,                              _______, _______, _______, _______, _______,
