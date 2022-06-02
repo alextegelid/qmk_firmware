@@ -13,6 +13,12 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     QWER_Z, QWER_X, QWER_C, QWER_V,  QWER_B,             QWER_N,  QWER_M, QWER_COMM, QWER_DOT, QWER_MINS,
                             LTHUMB2, LTHUMB1,            RTHUMB1, RTHUMB2
   ),
+  [COLE] = LAYOUT_split_3x5_2(
+    COLE_Q, COLE_W, COLE_F, COLE_P,  COLE_G,             COLE_J,  COLE_L, COLE_U,    COLE_Y,   COLE_ODIA,
+    COLE_A, COLE_R, COLE_S, COLE_T,  COLE_D,             COLE_H,  COLE_N, COLE_E,    COLE_I,   COLE_O,
+    COLE_Z, COLE_X, COLE_C, COLE_V,  COLE_B,             COLE_K,  COLE_M, COLE_COMM, COLE_DOT, COLE_MINS,
+                            LTHUMB2, LTHUMB1,            RTHUMB1, RTHUMB2
+  ),
   [TYPE] = LAYOUT_split_3x5_2(
     _______, _______, _______, _______, _______,                        _______,  KC_HOME, KC_END,  KC_DEL,  KC_BSPC,
     _______, _______, _______, _______, _______,                        CAPSWORD, _______, _______, _______, _______,
@@ -58,7 +64,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [NAV2] = LAYOUT_split_3x5_2(
     _______, _______, SE_COLN, KC_ESC,  _______,                        DF(GAME),  _______, _______, _______, KC_DEL,
     _______, SE_PERC, SE_SLSH, KC_ENT,  _______,                        DF(MOUS), KC_LGUI, _______, _______, _______,
-    _______, _______, SE_QUES, SE_EXLM, _______,                        DF(QWER),  _______, _______, _______, _______,
+    _______, _______, SE_QUES, SE_EXLM, _______,                        DF(QWER), DF(COLE), _______, _______, _______,
                                _______, KC_TAB,                         XXXXXXX,   _______
   ),
   [GAME] = LAYOUT_split_3x5_2(
@@ -95,8 +101,10 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 // triggering (to prevent misfires when typing quickly):
 bool get_combo_must_hold(uint16_t index, combo_t *combo) {
   switch (index) {
-    case ioArng:
-    case opAdia:
+    case qwerArng:
+    case qwerAdia:
+    case coleArng:
+    case coleAdia:
       return true;
   }
   return false;
@@ -105,8 +113,10 @@ bool get_combo_must_hold(uint16_t index, combo_t *combo) {
 // Tune timings for combos
 uint16_t get_combo_term(uint16_t index, combo_t *combo) {
   switch(index) {
-    case ioArng:
-    case opAdia:
+    case qwerArng:
+    case qwerAdia:
+    case coleArng:
+    case coleAdia:
       return 20; // tune the COMBO_MUST_HOLD
     default:
       return COMBO_TERM;
