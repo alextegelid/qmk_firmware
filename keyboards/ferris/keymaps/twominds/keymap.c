@@ -47,7 +47,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     SE_SLSH, SE_COLN, SE_LABK, SE_RABK, SE_SCLN,                        _______, _______, _______, _______, _______,
     SE_LCBR, SE_RCBR, SE_LPRN, SE_RPRN, SE_AT,                          _______, XXXXXXX, SE_EQL,  SE_PLUS, SE_PERC,
     _______, SE_EXLM, SE_LBRC, SE_RBRC, SE_QUES,                        _______, _______, _______, _______, _______,
-                               _______, _______,                        KC_VOLD, KC_VOLU
+                               _______, _______,                        _______, _______
   ),
   [FUNC] = LAYOUT_split_3x5_2(
     _______, _______, TABL,          TABR,    _______,                  _______, KC_F7, KC_F8, KC_F9, KC_F10,
@@ -62,10 +62,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                          _______, _______,                              _______, _______
   ),
   [NAV2] = LAYOUT_split_3x5_2(
-    _______, _______, SE_COLN, KC_ESC,  _______,                        DF(GAME),  _______, _______, _______, KC_DEL,
-    _______, SE_PERC, SE_SLSH, KC_ENT,  _______,                        DF(MOUS), KC_LGUI, _______, _______, _______,
+    _______, _______, SE_COLN, KC_ESC,  _______,                        DF(GAME), _______,  _______, _______, KC_VOLU,
+    _______, SE_PERC, SE_SLSH, KC_ENT,  _______,                        DF(MOUS), _______,  _______, _______, KC_VOLD,
     _______, _______, SE_QUES, SE_EXLM, _______,                        DF(QWER), DF(COLE), _______, _______, _______,
-                               _______, KC_TAB,                         XXXXXXX,   _______
+                               _______, KC_TAB,                         XXXXXXX,  _______
   ),
   [GAME] = LAYOUT_split_3x5_2(
     KC_ESC,  KC_1,   KC_2, KC_3,    KC_4,                               KC_5,     KC_6,    KC_7,    KC_8,    KC_9,
