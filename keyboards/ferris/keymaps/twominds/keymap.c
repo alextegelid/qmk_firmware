@@ -44,7 +44,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                                _______, _______,                        _______, _______
   ),
   [SYM2] = LAYOUT_split_3x5_2(
-    SE_SLSH, SE_COLN, SE_LABK, SE_RABK, SE_SCLN,                        _______, _______, _______, _______, _______,
+    SE_SLSH, SE_COLN, SE_LABK, SE_RABK, SE_SCLN,                        _______, _______, _______, SE_ARNG, SE_ADIA,
     SE_LCBR, SE_RCBR, SE_LPRN, SE_RPRN, SE_AT,                          _______, XXXXXXX, SE_EQL,  SE_PLUS, SE_PERC,
     _______, SE_EXLM, SE_LBRC, SE_RBRC, SE_QUES,                        _______, _______, _______, _______, _______,
                                _______, _______,                        _______, _______
