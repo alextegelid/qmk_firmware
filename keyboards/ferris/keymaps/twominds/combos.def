@@ -4,12 +4,6 @@ COMB(qwerEnter, KC_ENT, KC_U, KC_I)
 COMB(coleEscape, KC_ESC, KC_F, KC_P)
 COMB(coleEnter, KC_ENT, KC_L, KC_U)
 
-// Swedish å and ä
-COMB(qwerArng, SE_ARNG, KC_I, KC_O)
-COMB(qwerAdia, SE_ADIA, KC_O, KC_P)
-COMB(coleArng, SE_ARNG, KC_U, KC_Y)
-COMB(coleAdia, SE_ADIA, KC_Y, SE_ODIA)
-
 // Bootloader combo
 COMB(qwerBoot, QK_BOOT, KC_V, KC_B, KC_N, KC_M)
 COMB(coleBoot, QK_BOOT, KC_V, KC_B, KC_K, KC_M)
