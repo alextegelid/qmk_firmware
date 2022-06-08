@@ -50,9 +50,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                                   _______, _______,        _______, _______
   ),
   [NUMB] = LAYOUT_split_3x5_2(
-    _______, _______, _______, _______, _______,           KC_PPLS, SE_7, SE_8, SE_9, KC_PSLS,
+    _______, _______, _______, _______, _______,           KC_PPLS, SE_7, SE_8, SE_9, KC_PAST,
     _______, _______, XXXXXXX, _______, _______,           KC_PMNS, SE_4, SE_5, SE_6, SE_0,
-    _______, _______, _______, _______, _______,           KC_PEQL, SE_1, SE_2, SE_3, KC_PAST,
+    _______, _______, _______, _______, _______,           KC_PEQL, SE_1, SE_2, SE_3, KC_PSLS,
                                _______, _______,           _______, _______
   ),
   [NAV2] = LAYOUT_split_3x5_2(
