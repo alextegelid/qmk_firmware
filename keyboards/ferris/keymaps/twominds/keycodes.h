@@ -3,7 +3,6 @@ enum layers {
   QWER,
   COLE,
   TYPE,
-  MOUS,
   NAV1,
   SYM1,
   SYM2,
@@ -41,13 +40,13 @@ enum layers {
 // QWER layer keys row 2
 #define QWER_A LSFT_T(SE_A)
 #define QWER_S LT(FUNC,SE_S)
-#define QWER_D LT(MOUS,SE_D)
+#define QWER_D LT(NUMB,SE_D)
 #define QWER_F LT(SYM1,SE_F)
 #define QWER_G SE_G
 #define QWER_H SE_H
 #define QWER_J LT(SYM2,SE_J)
 #define QWER_K LT(NAV1,SE_K)
-#define QWER_L LT(NUMB,SE_L)
+#define QWER_L SE_L
 #define QWER_ODIA LSFT_T(SE_ODIA)
 
 //  QWER layer keys row 3
@@ -77,13 +76,13 @@ enum layers {
 // COLE layer keys row 2
 #define COLE_A LSFT_T(SE_A)
 #define COLE_R LT(FUNC,SE_R)
-#define COLE_S LT(MOUS,SE_S)
+#define COLE_S LT(NUMB,SE_S)
 #define COLE_T LT(SYM1,SE_T)
 #define COLE_D SE_D
 #define COLE_H SE_H
 #define COLE_N LT(SYM2,SE_N)
 #define COLE_E LT(NAV1,SE_E)
-#define COLE_I LT(NUMB,SE_I)
+#define COLE_I SE_I
 #define COLE_O LSFT_T(SE_O)
 
 //  QWER layer keys row 3
