@@ -13,6 +13,11 @@ enum layers {
   GAME,
 };
 
+enum keycodes {
+	CAPSWORD = SAFE_RANGE,
+
+	SW_APP,  // Switch to next app         (cmd-tab)
+};
 
 // Win and tab switches
 #define TABL LAG(KC_LEFT)
@@ -97,8 +102,3 @@ enum layers {
 #define COLE_COMM LALT_T(SE_COMM)
 #define COLE_DOT LCTL_T(SE_DOT)
 #define COLE_MINS SE_MINS
-enum keycodes {
-	CAPSWORD = SAFE_RANGE,
-
-	SW_APP,  // Switch to next app         (cmd-tab)
-};
