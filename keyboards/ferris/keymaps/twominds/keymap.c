@@ -1,10 +1,11 @@
 #include QMK_KEYBOARD_H
 #include "keymap_swedish_pro_osx_iso.h"
-#include "g/keymap_combo.h"
 
 #include "swapper.h"
 #include "keycodes.h"
 #include "capsword.c"
+
+#include "g/keymap_combo.h"
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [QWER] = LAYOUT_split_3x5_2(
