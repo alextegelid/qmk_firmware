@@ -51,15 +51,15 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                                _______, _______,         _______, _______
   ),
   [FUNC] = LAYOUT_split_3x5_2(
-    _______, _______, TABL,    TABR,    _______,         _______, KC_F7, KC_F8, KC_F9, KC_F10,
-    _______, XXXXXXX, _______, SW_APP,  _______,         _______, KC_F4, KC_F5, KC_F6, KC_F11,
-    _______, _______, PREVWIN, NEXTWIN, _______,         _______, KC_F1, KC_F2, KC_F3, KC_F12,
+    _______, _______, TABL,    TABR,    _______,         _______, KC_F7,   KC_F8,   KC_F9,   KC_F10,
+    _______, XXXXXXX, _______, SW_APP,  _______,         _______, KC_F4,   KC_F5,   KC_F6,   KC_F11,
+    _______, _______, PREVWIN, NEXTWIN, _______,         _______, KC_F1,   KC_F2,   KC_F3,   KC_F12,
                                _______, _______,         _______, _______
   ),
   [NUMB] = LAYOUT_split_3x5_2(
-    _______, _______, _______, _______, _______,         KC_PPLS, SE_7, SE_8, SE_9, KC_PAST,
-    _______, _______, XXXXXXX, _______, _______,         KC_PMNS, SE_4, SE_5, SE_6, XXXXXXX,
-    _______, _______, _______, _______, _______,         KC_PEQL, SE_1, SE_2, SE_3, KC_PSLS,
+    _______, _______, _______, _______, _______,         KC_PPLS, SE_7,    SE_8,    SE_9,    KC_PAST,
+    _______, _______, XXXXXXX, _______, _______,         KC_PMNS, SE_4,    SE_5,    SE_6,    XXXXXXX,
+    _______, _______, _______, _______, _______,         KC_PEQL, SE_1,    SE_2,    SE_3,    KC_PSLS,
                                _______, _______,         _______, SE_0
   ),
   [MOUS] = LAYOUT_split_3x5_2(
@@ -69,10 +69,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                                _______, _______,         _______, _______
   ),
   [GAME] = LAYOUT_split_3x5_2(
-    KC_ESC,  KC_1,   KC_2, KC_3,    KC_4,             KC_5,     KC_6,    KC_7,  KC_8,  KC_9,
-    XXXXXXX, KC_Q,   KC_W, KC_E,    KC_R,             XXXXXXX,  XXXXXXX, KC_G,  KC_B,  XXXXXXX,
-    KC_LSFT, KC_A,   KC_S, KC_D,    KC_F,             KC_F1,    KC_F2,   KC_F3, KC_F4, KC_F5,
-                           KC_ESC,  KC_SPC,           DF(QWER), XXXXXXX
+    KC_ESC,  KC_1,    KC_2,    KC_3,    KC_4,            KC_5,     KC_6,    KC_7,   KC_8,    KC_9,
+    XXXXXXX, KC_Q,    KC_W,    KC_E,    KC_R,            XXXXXXX,  XXXXXXX, KC_G,   KC_B,    XXXXXXX,
+    KC_LSFT, KC_A,    KC_S,    KC_D,    KC_F,            KC_F1,    KC_F2,   KC_F3,  KC_F4,   KC_F5,
+                               KC_ESC,  KC_SPC,          DF(QWER), XXXXXXX
   )
 };
 
