@@ -32,6 +32,12 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     _______, XXXXXXX, XXXXXXX, XXXXXXX, _______,         _______, _______, _______, _______,    _______,
                                _______, _______,         _______, _______
   ),
+  [NAV2] = LAYOUT_split_3x5_2(
+    _______, _______, _______, _______, _______,          DF(GAME), _______, _______, _______, KC_VOLU,
+    _______, _______, _______, _______, _______,          DF(COLE), _______, _______, _______, KC_VOLD,
+    _______, _______, _______, _______, _______,          DF(QWER), _______, _______, _______, KC_MPLY,
+                               _______, _______,          XXXXXXX,  _______
+  ),
   [SYM1] = LAYOUT_split_3x5_2(
     _______, _______, _______, _______, _______,         _______, SE_UNDS, SE_PIPE, SE_QUOT, _______,
     SE_CIRC, SE_ASTR, SE_AMPR, XXXXXXX, _______,         SE_HASH, SE_TILD, SE_SLSH, SE_DQUO, SE_DLR,
@@ -61,12 +67,6 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     _______, KC_MS_LEFT,    KC_MS_DOWN,  KC_MS_RIGHT,   _______,               _______, KC_MS_BTN1, KC_MS_BTN1, XXXXXXX, _______,
     _______, KC_MS_WH_LEFT, KC_MS_WH_UP, KC_MS_WH_DOWN, KC_MS_WH_RIGHT,        _______, _______,    _______,    _______, _______,
                                          _______,       _______,               _______, _______
-  ),
-  [NAV2] = LAYOUT_split_3x5_2(
-    _______, _______, _______, _______, _______,          DF(GAME), _______, _______, _______, KC_VOLU,
-    _______, _______, _______, _______, _______,          DF(COLE), _______, _______, _______, KC_VOLD,
-    _______, _______, _______, _______, _______,          DF(QWER), _______, _______, _______, KC_MPLY,
-                               _______, _______,          XXXXXXX,  _______
   ),
   [GAME] = LAYOUT_split_3x5_2(
     KC_ESC,  KC_1,   KC_2, KC_3,    KC_4,             KC_5,     KC_6,    KC_7,  KC_8,  KC_9,
