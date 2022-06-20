@@ -21,7 +21,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                             LTHUMB2, LTHUMB1,            RTHUMB1, RTHUMB2
   ),
   [TYPE] = LAYOUT_split_3x5_2(
-    _______, _______, _______, _______, _______,         SE_EXLM, SE_QUES,  _______, KC_DEL,  KC_BSPC,
+    _______, _______, _______, _______, _______,         _______, SE_QUES,  SE_EXLM, KC_DEL,  KC_BSPC,
     _______, _______, _______, _______, _______,         KC_PGUP, CAPSWORD, KC_HOME, KC_END,  _______,
     _______, _______, _______, _______, _______,         KC_PGDN, _______,  _______, _______, _______,
                                _______, XXXXXXX,         KC_TAB,  S(KC_TAB)
