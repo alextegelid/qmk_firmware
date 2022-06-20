@@ -63,15 +63,21 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                                _______, _______,         _______, _______
   ),
   [MISC] = LAYOUT_split_3x5_2(
-    _______, _______, _______, _______, _______,          DF(GAME), _______, _______, _______, KC_VOLU,
-    _______, _______, _______, _______, _______,          DF(COLE), _______, _______, _______, KC_VOLD,
-    _______, _______, _______, _______, _______,          DF(QWER), _______, _______, _______, KC_MPLY,
+    _______, _______, _______, _______, _______,          DF(MNCR), DF(DOTA), _______, _______, KC_VOLU,
+    _______, _______, _______, _______, _______,          DF(COLE), _______,  _______, _______, KC_VOLD,
+    _______, _______, _______, _______, _______,          DF(QWER), _______,  _______, _______, KC_MPLY,
                                _______, _______,          XXXXXXX,  _______
   ),
-  [GAME] = LAYOUT_split_3x5_2(
+  [MNCR] = LAYOUT_split_3x5_2(
     KC_ESC,  KC_1,    KC_2,    KC_3,    KC_4,            KC_5,     KC_6,    KC_7,   KC_8,    KC_9,
     XXXXXXX, KC_Q,    KC_W,    KC_E,    KC_R,            XXXXXXX,  XXXXXXX, KC_G,   KC_B,    XXXXXXX,
     KC_LSFT, KC_A,    KC_S,    KC_D,    KC_F,            KC_F1,    KC_F2,   KC_F3,  KC_F4,   KC_F5,
+                               KC_ESC,  KC_SPC,          DF(QWER), XXXXXXX
+  ),
+  [DOTA] = LAYOUT_split_3x5_2(
+    KC_ESC,  KC_1,    KC_2,    KC_3,    KC_F2,           XXXXXXX,  XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
+    KC_A,    KC_S,    KC_D,    KC_F,    KC_G,            XXXXXXX,  XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
+    KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,            XXXXXXX,  XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
                                KC_ESC,  KC_SPC,          DF(QWER), XXXXXXX
   )
 };
