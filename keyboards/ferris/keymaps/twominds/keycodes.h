@@ -9,7 +9,7 @@ enum layers {
   FUNC,
   NUMB,
   MOUS,
-  NAV2,
+  MISC,
   GAME,
 };
 
@@ -28,7 +28,7 @@ enum keycodes {
 // Thumb keys
 #define LTHUMB2 LGUI_T(KC_ESC)
 #define LTHUMB1 LT(TYPE, KC_NO)
-#define RTHUMB1 LT(NAV2, KC_SPC)
+#define RTHUMB1 LT(MISC, KC_SPC)
 #define RTHUMB2 KC_LGUI
 
 // QWER layer keys row 1
