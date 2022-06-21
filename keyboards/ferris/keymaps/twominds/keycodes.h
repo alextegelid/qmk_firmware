@@ -32,6 +32,12 @@ enum keycodes {
 #define RTHUMB1 LT(MISC, KC_SPC)
 #define RTHUMB2 KC_LGUI
 
+// Misc keys
+#define SCRNCAP LSG(KC_4)
+#define ZOOMIN G(KC_PPLS)
+#define ZOOMOUT G(SE_MINS)
+#define PASSWRD G(SE_QUOT)
+
 // QWER layer keys row 1
 #define QWER_Q SE_Q
 #define QWER_W SE_W
