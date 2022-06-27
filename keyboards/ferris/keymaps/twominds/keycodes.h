@@ -10,8 +10,7 @@ enum layers {
   NUMB,
   MOUS,
   MISC,
-  MNCR,
-  DOTA
+  GAME,
 };
 
 enum keycodes {
