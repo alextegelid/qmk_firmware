@@ -36,6 +36,7 @@ enum keycodes {
 #define ZOOMIN G(KC_PPLS)
 #define ZOOMOUT G(SE_MINS)
 #define PASSWRD G(SE_QUOT)
+#define MUTEDISC LCAG(SE_M)
 
 // QWER layer keys row 1
 #define QWER_Q SE_Q
