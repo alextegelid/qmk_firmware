@@ -29,7 +29,7 @@ enum keycodes {
 #define LTHUMB2 LGUI_T(KC_ESC)
 #define LTHUMB1 LT(TYPE, KC_NO)
 #define RTHUMB1 LT(MISC, KC_SPC)
-#define RTHUMB2 KC_LGUI
+#define RTHUMB2 LGUI_T(KC_ENT)
 
 // Misc keys
 #define SCRNCAP LSG(KC_4)
