@@ -27,10 +27,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                                _______, XXXXXXX,         KC_TAB,   S(KC_TAB)
   ),
   [NAV1] = LAYOUT_split_3x5_2(
-    _______, _______, KC_UP,   _______, _______,         _______, _______, _______, _______,    _______,
-    _______, KC_LEFT, KC_DOWN, KC_RGHT, _______,         _______, KC_LGUI, XXXXXXX, C(KC_LGUI), A(KC_LSFT),
-    _______, XXXXXXX, XXXXXXX, XXXXXXX, _______,         _______, _______, _______, _______,    _______,
-                               _______, _______,         _______, _______
+    XXXXXXX, XXXXXXX, KC_UP,   XXXXXXX, XXXXXXX,         XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,    XXXXXXX,
+    KC_LSFT, KC_LEFT, KC_DOWN, KC_RGHT, XXXXXXX,         XXXXXXX, KC_LGUI, XXXXXXX, C(KC_LGUI), A(KC_LSFT),
+    XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,         XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,    XXXXXXX,
+                               XXXXXXX, XXXXXXX,         XXXXXXX, XXXXXXX
   ),
   [SYM1] = LAYOUT_split_3x5_2(
     _______, _______, _______, _______, _______,         _______, SE_UNDS, SE_PIPE, SE_QUOT, _______,
