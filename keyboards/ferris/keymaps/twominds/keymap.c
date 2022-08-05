@@ -24,41 +24,41 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     _______, _______, _______, _______, _______,         _______,  SE_QUES, SE_EXLM, KC_DEL,  KC_BSPC,
     _______, _______, _______, _______, _______,         CAPSWORD, KC_HOME, KC_END,  _______, KC_PGUP,
     _______, _______, _______, _______, _______,         _______,  _______, _______, _______, KC_PGDN,
-                               _______, XXXXXXX,         KC_TAB,   S(KC_TAB)
+                               _______, ___X___,         KC_TAB,   S(KC_TAB)
   ),
   [NAV1] = LAYOUT_split_3x5_2(
-    XXXXXXX, XXXXXXX, KC_UP,   XXXXXXX, XXXXXXX,         XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,    XXXXXXX,
-    KC_LSFT, KC_LEFT, KC_DOWN, KC_RGHT, XXXXXXX,         XXXXXXX, KC_LGUI, XXXXXXX, C(KC_LGUI), A(KC_LSFT),
-    XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,         XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,    XXXXXXX,
-                               XXXXXXX, XXXXXXX,         XXXXXXX, XXXXXXX
+    ___X___, ___X___, KC_UP,   ___X___, ___X___,         ___X___, ___X___, ___X___, ___X___,    ___X___,
+    KC_LSFT, KC_LEFT, KC_DOWN, KC_RGHT, ___X___,         ___X___, KC_LGUI, ___X___, C(KC_LGUI), A(KC_LSFT),
+    ___X___, ___X___, ___X___, ___X___, ___X___,         ___X___, ___X___, ___X___, ___X___,    ___X___,
+                               ___X___, ___X___,         ___X___, ___X___
   ),
   [SYM1] = LAYOUT_split_3x5_2(
     _______, _______, _______, _______, _______,         _______, SE_UNDS, SE_PIPE, SE_QUOT, _______,
-    SE_CIRC, SE_ASTR, SE_AMPR, XXXXXXX, _______,         SE_HASH, SE_TILD, SE_SLSH, SE_DQUO, SE_DLR,
+    SE_CIRC, SE_ASTR, SE_AMPR, ___X___, _______,         SE_HASH, SE_TILD, SE_SLSH, SE_DQUO, SE_DLR,
     _______, _______, _______, _______, _______,         _______, SE_MINS, SE_BSLS, SE_GRV,  _______,
                                _______, _______,         _______, _______
   ),
   [SYM2] = LAYOUT_split_3x5_2(
     SE_SLSH, SE_COLN, SE_LABK, SE_RABK, SE_SCLN,         _______, _______, _______, SE_ARNG, SE_ADIA,
-    SE_LCBR, SE_RCBR, SE_LPRN, SE_RPRN, SE_AT,           _______, XXXXXXX, SE_EQL,  SE_PLUS, SE_PERC,
+    SE_LCBR, SE_RCBR, SE_LPRN, SE_RPRN, SE_AT,           _______, ___X___, SE_EQL,  SE_PLUS, SE_PERC,
     _______, SE_EXLM, SE_LBRC, SE_RBRC, SE_QUES,         _______, _______, _______, _______, _______,
                                _______, _______,         _______, _______
   ),
   [FUNC] = LAYOUT_split_3x5_2(
     _______, _______, TABL,    TABR,    _______,         _______, KC_F7,   KC_F8,   KC_F9,   KC_F10,
-    _______, XXXXXXX, _______, SW_APP,  _______,         _______, KC_F4,   KC_F5,   KC_F6,   KC_F11,
+    _______, ___X___, _______, SW_APP,  _______,         _______, KC_F4,   KC_F5,   KC_F6,   KC_F11,
     _______, _______, PREVWIN, NEXTWIN, _______,         _______, KC_F1,   KC_F2,   KC_F3,   KC_F12,
                                _______, _______,         _______, _______
   ),
   [NUMB] = LAYOUT_split_3x5_2(
     _______, _______, _______, _______, _______,         KC_PAST, SE_7,    SE_8,    SE_9,    KC_PMNS,
-    _______, _______, XXXXXXX, _______, _______,         KC_PSLS, SE_4,    SE_5,    SE_6,    KC_PPLS,
-    _______, _______, _______, _______, _______,         KC_PEQL, SE_1,    SE_2,    SE_3,    _______,
-                               _______, _______,         _______, SE_0
+    _______, _______, ___X___, _______, _______,         KC_PSLS, SE_4,    SE_5,    SE_6,    KC_PPLS,
+    _______, _______, _______, _______, _______,         KC_PEQL, SE_1,    SE_2,    SE_3,    ___X___,
+                               _______, _______,         ___X___, SE_0
   ),
   [MOUS] = LAYOUT_split_3x5_2(
     _______, _______, KC_MS_U, _______, _______,         _______, _______, _______, _______, _______,
-    _______, KC_MS_L, KC_MS_D, KC_MS_R, _______,         _______, KC_BTN1, KC_BTN2, XXXXXXX, _______,
+    _______, KC_MS_L, KC_MS_D, KC_MS_R, _______,         _______, KC_BTN1, KC_BTN2, ___X___, _______,
     _______, KC_WH_L, KC_WH_U, KC_WH_D, KC_WH_R,         _______, _______, _______, _______, _______,
                                _______, _______,         _______, _______
   ),
@@ -66,13 +66,13 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     _______, _______, ZOOMOUT, ZOOMIN,  _______,          DF(GAME), _______, _______, KC_BRIU, KC_VOLU,
     SCRNCAP, _______, _______, PASSWRD, _______,          DF(COLE), _______, _______, KC_BRID, KC_VOLD,
     _______, _______, _______, _______, _______,          DF(QWER), _______, _______, _______, KC_MPLY,
-                               _______, _______,          XXXXXXX,  _______
+                               _______, _______,          ___X___,  _______
   ),
   [GAME] = LAYOUT_split_3x5_2(
     KC_ESC,  KC_1,    KC_2,    KC_3,    KC_4,            KC_5,     KC_6,    KC_7,   KC_8,    KC_9,
-    XXXXXXX, KC_Q,    KC_W,    KC_E,    KC_R,            XXXXXXX,  XXXXXXX, KC_G,   KC_B,    MUTEDISC,
+    ___X___, KC_Q,    KC_W,    KC_E,    KC_R,            ___X___,  ___X___, KC_G,   KC_B,    MUTEDISC,
     KC_LSFT, KC_A,    KC_S,    KC_D,    KC_F,            KC_F1,    KC_F2,   KC_F3,  KC_F4,   KC_F5,
-                               KC_ESC,  KC_SPC,          DF(QWER), XXXXXXX
+                               KC_ESC,  KC_SPC,          DF(QWER), ___X___
   )
 };
 

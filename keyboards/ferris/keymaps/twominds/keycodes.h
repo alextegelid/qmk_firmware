@@ -19,6 +19,9 @@ enum keycodes {
 	SW_APP,  // Switch to next app         (cmd-tab)
 };
 
+// Add custom KC_NO keycode
+#define ___X___ KC_NO
+
 // Win and tab switches
 #define TABL LAG(KC_LEFT)
 #define TABR LAG(KC_RGHT)
