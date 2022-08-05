@@ -65,7 +65,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [MISC] = LAYOUT_split_3x5_2(
     _______, _______, ZOOMOUT, ZOOMIN,  _______,          DF(GAME), _______, _______, KC_BRIU, KC_VOLU,
     SCRNCAP, _______, _______, PASSWRD, _______,          DF(COLE), _______, _______, KC_BRID, KC_VOLD,
-    _______, _______, _______, _______, _______,          DF(QWER), _______, _______, _______, KC_MPLY,
+    CLRSNAP, _______, _______, _______, _______,          DF(QWER), _______, _______, _______, KC_MPLY,
                                _______, _______,          ___X___,  _______
   ),
   [GAME] = LAYOUT_split_3x5_2(
