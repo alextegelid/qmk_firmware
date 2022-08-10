@@ -101,7 +101,13 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 // Specify combos that must be held for the duration of COMBO_TERM before
 // triggering (to prevent misfires when typing quickly):
 bool get_combo_must_hold(uint16_t index, combo_t *combo) {
-  return false;
+  switch(index) {
+    case qwerBoot:
+    case coleBoot:
+      return true;
+    default:
+      return false;
+  }
 }
 
 // Tune timings for combos
