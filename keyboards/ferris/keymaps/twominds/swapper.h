@@ -11,10 +11,10 @@
 //
 // This behaviour is useful for more than just cmd-tab, hence: cmdish, tabish.
 void update_swapper(
-    bool *active,
-    uint16_t cmdish,
-    uint16_t tabish,
-    uint16_t trigger,
-    uint16_t keycode,
-    keyrecord_t *record
+  bool *active,
+  uint16_t cmdish,
+  uint16_t tabish,
+  uint16_t trigger,
+  uint16_t keycode,
+  keyrecord_t *record
 );
