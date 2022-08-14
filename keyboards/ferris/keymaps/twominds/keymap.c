@@ -104,6 +104,8 @@ bool get_combo_must_hold(uint16_t index, combo_t *combo) {
   switch(index) {
     case qwerBoot:
     case coleBoot:
+    case qwerEscape:
+    case coleEscape:
       return true;
     default:
       return false;
@@ -113,6 +115,9 @@ bool get_combo_must_hold(uint16_t index, combo_t *combo) {
 // Tune timings for combos
 uint16_t get_combo_term(uint16_t index, combo_t *combo) {
   switch(index) {
+    case qwerEscape:
+    case coleEscape:
+      return 20;
     default:
       return COMBO_TERM;
   }
