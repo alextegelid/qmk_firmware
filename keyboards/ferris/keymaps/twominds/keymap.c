@@ -5,7 +5,7 @@
 #include "keycodes.h"
 #include "capsword.c"
 
-#include "g/keymap_combo.h"
+#include "combos.c"
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [QWER] = LAYOUT_split_3x5_2(
@@ -102,10 +102,7 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 // triggering (to prevent misfires when typing quickly):
 bool get_combo_must_hold(uint16_t index, combo_t *combo) {
   switch(index) {
-    case qwerBoot:
-    case coleBoot:
-    case qwerEscape:
-    case coleEscape:
+    case QWER_BOOT:
       return true;
     default:
       return false;
@@ -115,8 +112,7 @@ bool get_combo_must_hold(uint16_t index, combo_t *combo) {
 // Tune timings for combos
 uint16_t get_combo_term(uint16_t index, combo_t *combo) {
   switch(index) {
-    case qwerEscape:
-    case coleEscape:
+    case QWER_ESC:
       return 20;
     default:
       return COMBO_TERM;

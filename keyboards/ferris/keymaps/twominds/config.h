@@ -49,6 +49,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #endif
 
 // Combo key configuration
+#define COMBO_COUNT 3
 #define COMBO_VARIABLE_LEN
 #define COMBO_TERM 50
 #define COMBO_MUST_HOLD_PER_COMBO
