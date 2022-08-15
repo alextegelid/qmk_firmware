@@ -53,6 +53,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define COMBO_VARIABLE_LEN
 #define COMBO_TERM 50
 #define COMBO_MUST_HOLD_PER_COMBO
+#define COMBO_HOLD_TERM 100
 #define COMBO_TERM_PER_COMBO
 
 // All combos are defined on the base layer
