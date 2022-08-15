@@ -103,18 +103,9 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 bool get_combo_must_hold(uint16_t index, combo_t *combo) {
   switch(index) {
     case QWER_BOOT:
+    case QWER_ESC:
       return true;
     default:
       return false;
-  }
-}
-
-// Tune timings for combos
-uint16_t get_combo_term(uint16_t index, combo_t *combo) {
-  switch(index) {
-    case QWER_ESC:
-      return 20;
-    default:
-      return COMBO_TERM;
   }
 }
