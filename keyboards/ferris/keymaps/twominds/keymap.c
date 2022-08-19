@@ -97,15 +97,3 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 
   return true;
 }
-
-// Specify combos that must be held for the duration of COMBO_TERM before
-// triggering (to prevent misfires when typing quickly):
-bool get_combo_must_hold(uint16_t index, combo_t *combo) {
-  switch(index) {
-    case QWER_BOOT:
-    case QWER_ESC:
-      return true;
-    default:
-      return false;
-  }
-}
