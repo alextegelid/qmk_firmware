@@ -24,9 +24,9 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 // give it more time to accelerate to max speed to retain precise control over short distances.
 #define MOUSEKEY_TIME_TO_MAX 50
 // The default is 300. Let's try and make this as low as possible while keeping the cursor responsive
-#define MOUSEKEY_DELAY 50
+#define MOUSEKEY_DELAY 0
 // It makes sense to use the same delay for the mouseweel
-#define MOUSEKEY_WHEEL_DELAY 50
+#define MOUSEKEY_WHEEL_DELAY 100
 // The default is 100
 #define MOUSEKEY_WHEEL_INTERVAL 50
 // The default is 40
