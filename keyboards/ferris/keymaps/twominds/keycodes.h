@@ -14,6 +14,8 @@ enum layers {
 };
 
 enum keycodes {
+  CAPSWORD = SAFE_RANGE,
+
   SW_APP,  // Switch to next app         (cmd-tab)
 };
 
