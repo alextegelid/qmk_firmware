@@ -23,8 +23,8 @@ enum keycodes {
 #define ___X___ KC_NO
 
 // Win and tab switches
-#define TABL LAG(KC_LEFT)
-#define TABR LAG(KC_RGHT)
+#define TABLEFT LAG(KC_LEFT)
+#define TABRGHT LAG(KC_RGHT)
 #define NEXTWIN G(SE_RABK)
 #define PREVWIN G(SE_LABK)
 

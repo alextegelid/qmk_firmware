@@ -45,10 +45,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                                _______, _______,         _______, _______
   ),
   [FUNC] = LAYOUT_split_3x5_2(
-    _______, _______, TABL,    TABR,    _______,         _______, KC_F7,   KC_F8,   KC_F9,   KC_F10,
-    _______, ___X___, _______, SW_APP,  _______,         _______, KC_F4,   KC_F5,   KC_F6,   KC_F11,
-    _______, _______, PREVWIN, NEXTWIN, _______,         _______, KC_F1,   KC_F2,   KC_F3,   KC_F12,
-                               _______, _______,         _______, _______
+    ___X___, ___X___, TABLEFT, TABRGHT, ___X___,         _______, KC_F7,   KC_F8,   KC_F9,   KC_F10,
+    ___X___, ___X___, ___X___, SW_APP,  ___X___,         _______, KC_F4,   KC_F5,   KC_F6,   KC_F11,
+    ___X___, ___X___, PREVWIN, NEXTWIN, ___X___,         _______, KC_F1,   KC_F2,   KC_F3,   KC_F12,
+                               ___X___, ___X___,         _______, _______
   ),
   [NUMB] = LAYOUT_split_3x5_2(
     _______, _______, _______, _______, _______,         KC_PAST, SE_7,    SE_8,    SE_9,    KC_PMNS,
