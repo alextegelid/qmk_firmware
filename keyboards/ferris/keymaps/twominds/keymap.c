@@ -11,16 +11,16 @@
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [QWER] = LAYOUT_split_3x5_2(
-    QWER_Q, QWER_W, QWER_E, QWER_R,  QWER_T,             QWER_Y,  QWER_U, QWER_I,    QWER_O,   QWER_P,
-    QWER_A, QWER_S, QWER_D, QWER_F,  QWER_G,             QWER_H,  QWER_J, QWER_K,    QWER_L,   QWER_ODIA,
-    QWER_Z, QWER_X, QWER_C, QWER_V,  QWER_B,             QWER_N,  QWER_M, QWER_COMM, QWER_DOT, QWER_MINS,
-                            LTHUMB2, LTHUMB1,            RTHUMB1, RTHUMB2
+    QWER_Q,  QWER_W,  QWER_E,  QWER_R,  QWER_T,          QWER_Y,  QWER_U, QWER_I,    QWER_O,   QWER_P,
+    QWER_A,  QWER_S,  QWER_D,  QWER_F,  QWER_G,          QWER_H,  QWER_J, QWER_K,    QWER_L,   QWER_ODIA,
+    QWER_Z,  QWER_X,  QWER_C,  QWER_V,  QWER_B,          QWER_N,  QWER_M, QWER_COMM, QWER_DOT, QWER_MINS,
+                               LTHUMB2, LTHUMB1,         RTHUMB1, RTHUMB2
   ),
   [COLE] = LAYOUT_split_3x5_2(
-    COLE_Q, COLE_W, COLE_F, COLE_P,  COLE_G,             COLE_J,  COLE_L, COLE_U,    COLE_Y,   COLE_ODIA,
-    COLE_A, COLE_R, COLE_S, COLE_T,  COLE_D,             COLE_H,  COLE_N, COLE_E,    COLE_I,   COLE_O,
-    COLE_Z, COLE_X, COLE_C, COLE_V,  COLE_B,             COLE_K,  COLE_M, COLE_COMM, COLE_DOT, COLE_MINS,
-                            LTHUMB2, LTHUMB1,            RTHUMB1, RTHUMB2
+    COLE_Q,  COLE_W,  COLE_F,  COLE_P,  COLE_G,          COLE_J,  COLE_L, COLE_U,    COLE_Y,   COLE_ODIA,
+    COLE_A,  COLE_R,  COLE_S,  COLE_T,  COLE_D,          COLE_H,  COLE_N, COLE_E,    COLE_I,   COLE_O,
+    COLE_Z,  COLE_X,  COLE_C,  COLE_V,  COLE_B,          COLE_K,  COLE_M, COLE_COMM, COLE_DOT, COLE_MINS,
+                               LTHUMB2, LTHUMB1,         RTHUMB1, RTHUMB2
   ),
   [TYPE] = LAYOUT_split_3x5_2(
     _______, _______, _______, _______, LSG(KC_7),       _______,  SE_EXLM, SE_QUES, KC_DEL,  KC_BSPC,
@@ -65,10 +65,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                                _______, _______,         _______, _______
   ),
   [MISC] = LAYOUT_split_3x5_2(
-    C(KC_1), _______, ZOOMOUT, ZOOMIN,  _______,          DF(GAME), _______, _______, KC_BRIU, KC_VOLU,
-    SCRNCAP, _______, _______, PASSWRD, _______,          DF(COLE), _______, _______, KC_BRID, KC_VOLD,
-    CLRSNAP, _______, _______, _______, _______,          DF(QWER), _______, _______, _______, KC_MPLY,
-                               _______, _______,          ___X___,  _______
+    C(KC_1), _______, ZOOMOUT, ZOOMIN,  _______,         DF(GAME), _______, _______, KC_BRIU, KC_VOLU,
+    SCRNCAP, _______, _______, PASSWRD, _______,         DF(COLE), _______, _______, KC_BRID, KC_VOLD,
+    CLRSNAP, _______, _______, _______, _______,         DF(QWER), _______, _______, _______, KC_MPLY,
+                               _______, _______,         ___X___,  _______
   ),
   [GAME] = LAYOUT_split_3x5_2(
     KC_ESC,  KC_1,    KC_2,    KC_3,    KC_4,            KC_5,     KC_6,    KC_7,   KC_8,    KC_9,
