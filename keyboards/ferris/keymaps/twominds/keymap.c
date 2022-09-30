@@ -2,9 +2,11 @@
 #include "keymap_swedish_pro_mac_iso.h"
 
 #include "swapper.h"
-#include "keycodes.h"
-#include "capsword.c"
+#include "swapper.c"
 
+#include "keycodes.h"
+
+#include "capsword.c"
 #include "combos.c"
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
