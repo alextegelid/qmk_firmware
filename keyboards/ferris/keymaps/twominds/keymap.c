@@ -34,12 +34,12 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   ),
   [SYM1] = LAYOUT_split_3x5_2(
     _______, _______, _______, _______, _______,         _______, SE_UNDS, SE_PIPE, SE_QUOT, _______,
-    SE_CIRC, SE_ASTR, SE_AMPR, ___X___, _______,         SE_HASH, SE_COLN, SE_SLSH, SE_DQUO, SE_DLR,
-    _______, _______, _______, _______, _______,         _______, SE_SCLN, SE_BSLS, SE_GRV,  _______,
+    SE_CIRC, SE_ASTR, SE_AMPR, ___X___, _______,         SE_HASH, SE_TILD, SE_SLSH, SE_DQUO, SE_DLR,
+    _______, _______, _______, _______, _______,         _______, SE_MINS, SE_BSLS, SE_GRV,  _______,
                                _______, _______,         _______, _______
   ),
   [SYM2] = LAYOUT_split_3x5_2(
-    SE_SLSH, SE_TILD, SE_LABK, SE_RABK, SE_MINS,         _______, _______, _______, SE_ARNG, SE_ADIA,
+    SE_SLSH, SE_COLN, SE_LABK, SE_RABK, SE_SCLN,         _______, _______, _______, SE_ARNG, SE_ADIA,
     SE_LCBR, SE_RCBR, SE_LPRN, SE_RPRN, SE_AT,           _______, ___X___, SE_EQL,  SE_PLUS, SE_PERC,
     _______, SE_EXLM, SE_LBRC, SE_RBRC, SE_QUES,         _______, _______, _______, _______, _______,
                                _______, _______,         _______, _______
