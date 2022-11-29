@@ -20,6 +20,7 @@ bool get_combo_must_hold(uint16_t index, combo_t *combo) {
   switch(index) {
     case QWER_BOOT:
     case QWER_ESC:
+    case QWER_ENT:
       return true;
     default:
       return false;
