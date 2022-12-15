@@ -28,9 +28,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                                _______, ___X___,         KC_TAB,   S(KC_TAB)
   ),
   [NAV1] = LAYOUT_split_3x5_2(
-    ___X___, ___X___, KC_UP,   ___X___, ___X___,         ___X___, ___X___, ___X___, ___X___,    ___X___,
-    KC_LSFT, KC_LEFT, KC_DOWN, KC_RGHT, ___X___,         ___X___, ___X___, ___X___, C(KC_LGUI), A(KC_LSFT),
-    ___X___, ___X___, ___X___, ___X___, ___X___,         ___X___, ___X___, ___X___, ___X___,    ___X___,
+    ___X___, ___X___, KC_UP,   ___X___, ___X___,         ___X___, ___X___, ___X___,    ___X___,    ___X___,
+    KC_LSFT, KC_LEFT, KC_DOWN, KC_RGHT, ___X___,         ___X___, ___X___, ___X___,    C(KC_LGUI), A(KC_LSFT),
+    ___X___, ___X___, ___X___, ___X___, ___X___,         ___X___, ___X___, A(KC_LGUI), ___X___,    ___X___,
                                ___X___, ___X___,         ___X___, ___X___
   ),
   [SYM1] = LAYOUT_split_3x5_2(
