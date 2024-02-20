@@ -36,7 +36,7 @@ enum keycodes {
 
 // Misc keys
 #define SCRNCAP LSG(KC_4)
-#define CLRSNAP MEH(SE_C)
+#define WINMNGR MEH(SE_C)
 #define ZOOMIN G(KC_PPLS)
 #define ZOOMOUT G(SE_MINS)
 #define PASSWRD G(SE_QUOT)
