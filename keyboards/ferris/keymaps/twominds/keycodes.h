@@ -1,3 +1,5 @@
+#pragma once
+
 // Friendly layer names
 enum layers {
   QWER,
