@@ -5,7 +5,6 @@
 
 #include "keycodes.h"
 
-#include "capsword.c"
 #include "combos.c"
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
@@ -22,10 +21,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                                LTHUMB2, LTHUMB1,         RTHUMB1, RTHUMB2
   ),
   [TYPE] = LAYOUT_split_3x5_2(
-    _______, _______, _______, _______, LSG(KC_7),       _______,  SE_EXLM, SE_QUES, KC_DEL,  KC_BSPC,
-    _______, _______, _______, _______, _______,         CAPSWORD, KC_HOME, KC_END,  _______, ___X___,
-    _______, _______, _______, _______, _______,         _______,  _______, _______, KC_PGUP, KC_PGDN,
-                               _______, ___X___,         KC_TAB,   S(KC_TAB)
+    _______, _______, _______, _______, LSG(KC_7),       _______, SE_EXLM, SE_QUES, KC_DEL,  KC_BSPC,
+    _______, _______, _______, _______, _______,         CW_TOGG, KC_HOME, KC_END,  _______, ___X___,
+    _______, _______, _______, _______, _______,         _______, _______, _______, KC_PGUP, KC_PGDN,
+                               _______, ___X___,         KC_TAB,  S(KC_TAB)
   ),
   [NAV1] = LAYOUT_split_3x5_2(
     ___X___, ___X___, KC_UP,   ___X___, ___X___,         ___X___, ___X___, ___X___,    ___X___,    ___X___,
@@ -84,17 +83,6 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
     &sw_app_active, KC_LGUI, KC_TAB, SW_APP,
     keycode, record
   );
-
-  switch (keycode) {
-  case CAPSWORD:
-    if (record->event.pressed) {
-      return false;
-    } else {
-      caps_word_toggle();
-      return false;
-    }
-  }
-  process_caps_word(keycode, record);
 
   return true;
 }
