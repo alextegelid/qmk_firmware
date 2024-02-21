@@ -7,6 +7,25 @@
 
 #include "combos.c"
 
+// Friendly layer names
+enum layers {
+  QWER,
+  COLE,
+  TYPE,
+  NAV1,
+  SYM1,
+  SYM2,
+  FUNC,
+  NUMB,
+  MOUS,
+  MISC,
+  GAME,
+};
+
+enum keycodes {
+  SW_APP = SAFE_RANGE,  // Switch to next app         (cmd-tab)
+};
+
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [QWER] = LAYOUT_split_3x5_2(
     QWER_Q,  QWER_W,  QWER_E,  QWER_R,  QWER_T,          QWER_Y,  QWER_U, QWER_I,    QWER_O,   QWER_P,

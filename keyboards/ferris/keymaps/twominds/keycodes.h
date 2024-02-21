@@ -1,24 +1,5 @@
 #pragma once
 
-// Friendly layer names
-enum layers {
-  QWER,
-  COLE,
-  TYPE,
-  NAV1,
-  SYM1,
-  SYM2,
-  FUNC,
-  NUMB,
-  MOUS,
-  MISC,
-  GAME,
-};
-
-enum keycodes {
-  SW_APP,  // Switch to next app         (cmd-tab)
-};
-
 // Add custom KC_NO keycode
 #define ___X___ KC_NO
 
