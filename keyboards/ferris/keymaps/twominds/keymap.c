@@ -70,8 +70,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                                ___X___, ___X___,         _______, _______
   ),
   [NUMB] = LAYOUT_split_3x5_2(
-    _______, _______, _______, _______, _______,         KC_PAST, SE_7,    SE_8,    SE_9,    KC_PMNS,
-    _______, _______, ___X___, _______, _______,         KC_PSLS, SE_4,    SE_5,    SE_6,    KC_PPLS,
+    _______, _______, _______, _______, _______,         KC_PSLS, SE_7,    SE_8,    SE_9,    KC_PMNS,
+    _______, _______, ___X___, SE_COMM, _______,         KC_PAST, SE_4,    SE_5,    SE_6,    KC_PPLS,
     _______, _______, _______, _______, _______,         KC_PEQL, SE_1,    SE_2,    SE_3,    KC_DOT,
                                _______, _______,         ___X___, SE_0
   ),
