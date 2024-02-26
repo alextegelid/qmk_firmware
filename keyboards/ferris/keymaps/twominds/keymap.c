@@ -17,7 +17,6 @@ enum layers {
   SYM2,
   FUNC,
   NUMB,
-  MOUS,
   MISC,
   GAME,
 };
@@ -74,12 +73,6 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     _______, _______, ___X___, SE_COMM, _______,         KC_PAST, SE_4,    SE_5,    SE_6,    KC_PPLS,
     _______, _______, _______, _______, _______,         KC_PEQL, SE_1,    SE_2,    SE_3,    KC_DOT,
                                _______, _______,         ___X___, SE_0
-  ),
-  [MOUS] = LAYOUT_split_3x5_2(
-    ___X___, ___X___, KC_MS_U, ___X___, ___X___,         _______, _______, _______, _______, _______,
-    ___X___, KC_MS_L, KC_MS_D, KC_MS_R, ___X___,         _______, KC_BTN1, KC_BTN2, ___X___, _______,
-    ___X___, KC_WH_L, KC_WH_U, KC_WH_D, KC_WH_R,         _______, _______, _______, _______, _______,
-                               _______, _______,         _______, _______
   ),
   [MISC] = LAYOUT_split_3x5_2(
     C(KC_1), _______, ZOOMOUT, ZOOMIN,  _______,         DF(GAME), _______, _______, KC_BRIU, KC_VOLU,

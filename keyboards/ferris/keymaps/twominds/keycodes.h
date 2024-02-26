@@ -44,7 +44,7 @@
 #define QWER_H SE_H
 #define QWER_J LT(SYM2,SE_J)
 #define QWER_K LT(NAV1,SE_K)
-#define QWER_L LT(MOUS, SE_L)
+#define QWER_L SE_L
 #define QWER_ODIA LSFT_T(SE_ODIA)
 
 //  QWER layer keys row 3
@@ -80,7 +80,7 @@
 #define COLE_H SE_H
 #define COLE_N LT(SYM2,SE_N)
 #define COLE_E LT(NAV1,SE_E)
-#define COLE_I LT(MOUS, SE_I)
+#define COLE_I SE_I
 #define COLE_O LSFT_T(SE_O)
 
 //  QWER layer keys row 3
