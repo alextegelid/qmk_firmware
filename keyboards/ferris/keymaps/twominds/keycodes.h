@@ -83,7 +83,7 @@
 #define COLE_I SE_I
 #define COLE_O LSFT_T(SE_O)
 
-//  QWER layer keys row 3
+//  COLE layer keys row 3
 #define COLE_Z LCAG_T(SE_Z)
 #define COLE_X LCTL_T(SE_X)
 #define COLE_C LALT_T(SE_C)
