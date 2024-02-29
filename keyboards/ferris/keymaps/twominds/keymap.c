@@ -1,10 +1,8 @@
 #include QMK_KEYBOARD_H
 #include "keymap_swedish_pro_mac_iso.h"
-
-#include "swapper.c"
-
 #include "keycodes.h"
 
+#include "swapper.c"
 #include "combos.c"
 
 // Friendly layer names
