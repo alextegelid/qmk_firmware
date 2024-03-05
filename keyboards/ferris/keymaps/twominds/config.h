@@ -39,14 +39,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define PERMISSIVE_HOLD
 #define TAPPING_FORCE_HOLD
 
-// Underglow configuration
-#ifdef RGBLIGHT_ENABLE
-  #define RGBLIGHT_ANIMATIONS
-  #define RGBLIGHT_HUE_STEP 8
-  #define RGBLIGHT_SAT_STEP 8
-  #define RGBLIGHT_VAL_STEP 8
-#endif
-
 // Combo key configuration
 #define COMBO_COUNT 3
 #define COMBO_VARIABLE_LEN
@@ -57,3 +49,17 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 // All combos are defined on the base layer
 #define COMBO_ONLY_FROM_LAYER 0
+
+// LED configuration
+#ifdef RGBLIGHT_ENABLE
+  #undef WS2812_DI_PIN
+  #undef RGBLED_NUM
+  #undef RGBLED_SPLIT
+  #define WS2812_DI_PIN C7 
+  #define WS2812_BYTE_ORDER WS2812_BYTE_ORDER_GRB
+  #define RGBLED_NUM 2
+  #define RGBLED_SPLIT {1, 1}
+  #define RGBLIGHT_DEFAULT_MODE RGBLIGHT_MODE_STATIC_LIGHT
+  #define RGBLIGHT_DEFAULT_HUE 0
+  #define RGBLIGHT_DEFAULT_SAT UINT8_MAX
+#endif

@@ -96,3 +96,14 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 
   return true;
 }
+
+void keyboard_post_init_user(void) {
+  // Initialize RGB to static black
+  rgblight_enable_noeeprom();
+  rgblight_sethsv_noeeprom(HSV_BLACK);
+  rgblight_mode_noeeprom(RGBLIGHT_MODE_STATIC_LIGHT);
+}
+
+void housekeeping_task_user(void) {
+  rgblight_setrgb_at(255, 0, 0, 0);
+}
