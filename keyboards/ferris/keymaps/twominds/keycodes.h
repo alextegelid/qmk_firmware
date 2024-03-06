@@ -11,7 +11,7 @@
 
 // Thumb keys
 #define LTHUMB2 LGUI_T(KC_ESC)
-#define LTHUMB1 LT(TYPE, KC_NO)
+#define LTHUMB1 MO(TYPE)
 #define RTHUMB1 LT(MISC, KC_SPC)
 #define RTHUMB2 LGUI_T(KC_ENT)
 
