@@ -59,38 +59,3 @@
 #define QWER_DOT LCTL_T(SE_DOT)
 #define QWER_MINS SE_MINS
 
-// COLE layer keys row 1
-#define COLE_Q SE_Q
-#define COLE_W SE_W
-#define COLE_F SE_F
-#define COLE_P SE_P
-#define COLE_G SE_G
-#define COLE_J SE_J
-#define COLE_L SE_L
-#define COLE_U SE_U
-#define COLE_Y SE_Y
-#define COLE_ODIA SE_ODIA
-
-// COLE layer keys row 2
-#define COLE_A LSFT_T(SE_A)
-#define COLE_R LT(FUNC,SE_R)
-#define COLE_S LT(NUMB,SE_S)
-#define COLE_T LT(SYM1,SE_T)
-#define COLE_D SE_D
-#define COLE_H SE_H
-#define COLE_N LT(SYM2,SE_N)
-#define COLE_E LT(NAV1,SE_E)
-#define COLE_I SE_I
-#define COLE_O LSFT_T(SE_O)
-
-//  COLE layer keys row 3
-#define COLE_Z LCAG_T(SE_Z)
-#define COLE_X LCTL_T(SE_X)
-#define COLE_C LALT_T(SE_C)
-#define COLE_V SE_V
-#define COLE_B SE_B
-#define COLE_K SE_K
-#define COLE_M SE_M
-#define COLE_COMM LALT_T(SE_COMM)
-#define COLE_DOT LCTL_T(SE_DOT)
-#define COLE_MINS SE_MINS

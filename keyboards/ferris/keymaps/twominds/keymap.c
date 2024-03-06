@@ -8,7 +8,6 @@
 // Friendly layer names
 enum layers {
   QWER,
-  COLE,
   TYPE,
   NAV1,
   SYM1,
@@ -28,12 +27,6 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     QWER_Q,  QWER_W,  QWER_E,  QWER_R,  QWER_T,          QWER_Y,  QWER_U, QWER_I,    QWER_O,   QWER_P,
     QWER_A,  QWER_S,  QWER_D,  QWER_F,  QWER_G,          QWER_H,  QWER_J, QWER_K,    QWER_L,   QWER_ODIA,
     QWER_Z,  QWER_X,  QWER_C,  QWER_V,  QWER_B,          QWER_N,  QWER_M, QWER_COMM, QWER_DOT, QWER_MINS,
-                               LTHUMB2, LTHUMB1,         RTHUMB1, RTHUMB2
-  ),
-  [COLE] = LAYOUT_split_3x5_2(
-    COLE_Q,  COLE_W,  COLE_F,  COLE_P,  COLE_G,          COLE_J,  COLE_L, COLE_U,    COLE_Y,   COLE_ODIA,
-    COLE_A,  COLE_R,  COLE_S,  COLE_T,  COLE_D,          COLE_H,  COLE_N, COLE_E,    COLE_I,   COLE_O,
-    COLE_Z,  COLE_X,  COLE_C,  COLE_V,  COLE_B,          COLE_K,  COLE_M, COLE_COMM, COLE_DOT, COLE_MINS,
                                LTHUMB2, LTHUMB1,         RTHUMB1, RTHUMB2
   ),
   [TYPE] = LAYOUT_split_3x5_2(
@@ -74,7 +67,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   ),
   [MISC] = LAYOUT_split_3x5_2(
     C(KC_1), _______, ZOOMOUT, ZOOMIN,  _______,         DF(GAME), _______, RGB_HUI, KC_BRIU, KC_VOLU,
-    SCRNCAP, _______, _______, PASSWRD, _______,         DF(COLE), _______, RGB_HUD, KC_BRID, KC_VOLD,
+    SCRNCAP, _______, _______, PASSWRD, _______,         _______,  _______, RGB_HUD, KC_BRID, KC_VOLD,
     WINMNGR, _______, _______, _______, _______,         DF(QWER), _______, RGB_TOG, _______, KC_MPLY,
                                _______, _______,         ___X___,  _______
   ),
