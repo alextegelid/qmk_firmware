@@ -90,56 +90,6 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
   return true;
 }
 
-const rgblight_segment_t PROGMEM my_type[] = RGBLIGHT_LAYER_SEGMENTS(
-    {0,2,HSV_WHITE}
-);
-
-const rgblight_segment_t PROGMEM my_nav1[] = RGBLIGHT_LAYER_SEGMENTS(
-    {0,2,HSV_WHITE}
-);
-
-const rgblight_segment_t PROGMEM my_sym1[] = RGBLIGHT_LAYER_SEGMENTS(
-    {0,2,HSV_WHITE}
-);
-
-const rgblight_segment_t PROGMEM my_sym2[] = RGBLIGHT_LAYER_SEGMENTS(
-    {0,2,HSV_WHITE}
-);
-
-const rgblight_segment_t PROGMEM my_func[] = RGBLIGHT_LAYER_SEGMENTS(
-    {0,2,HSV_WHITE}
-);
-
-const rgblight_segment_t PROGMEM my_numb[] = RGBLIGHT_LAYER_SEGMENTS(
-    {0,2,HSV_WHITE}
-);
-
-const rgblight_segment_t PROGMEM my_misc[] = RGBLIGHT_LAYER_SEGMENTS(
-    {0,2,HSV_WHITE}
-);
-
-const rgblight_segment_t* const PROGMEM my_rgb_layers[] = RGBLIGHT_LAYERS_LIST(
-  my_type,
-  my_nav1,
-  my_sym1,
-  my_sym2,
-  my_func,
-  my_numb,
-  my_misc
-);
-
 void keyboard_post_init_user(void) {
-  rgblight_layers = my_rgb_layers;
   rgblight_enable_noeeprom();
-};
-
-layer_state_t layer_state_set_user(layer_state_t state) {
-  rgblight_set_layer_state(1, layer_state_cmp(state, TYPE));
-  rgblight_set_layer_state(2, layer_state_cmp(state, NAV1));
-  rgblight_set_layer_state(3, layer_state_cmp(state, SYM1));
-  rgblight_set_layer_state(4, layer_state_cmp(state, SYM2));
-  rgblight_set_layer_state(5, layer_state_cmp(state, FUNC));
-  rgblight_set_layer_state(6, layer_state_cmp(state, NUMB));
-  rgblight_set_layer_state(7, layer_state_cmp(state, MISC));
-  return state;
 };
