@@ -73,9 +73,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                                _______, _______,         ___X___, SE_0
   ),
   [MISC] = LAYOUT_split_3x5_2(
-    C(KC_1), _______, ZOOMOUT, ZOOMIN,  _______,         DF(GAME), _______, _______, KC_BRIU, KC_VOLU,
-    SCRNCAP, _______, _______, PASSWRD, _______,         DF(COLE), _______, _______, KC_BRID, KC_VOLD,
-    WINMNGR, _______, _______, _______, _______,         DF(QWER), _______, _______, _______, KC_MPLY,
+    C(KC_1), _______, ZOOMOUT, ZOOMIN,  _______,         DF(GAME), _______, RGB_HUI, KC_BRIU, KC_VOLU,
+    SCRNCAP, _______, _______, PASSWRD, _______,         DF(COLE), _______, RGB_HUD, KC_BRID, KC_VOLD,
+    WINMNGR, _______, _______, _______, _______,         DF(QWER), _______, RGB_TOG, _______, KC_MPLY,
                                _______, _______,         ___X___,  _______
   ),
   [GAME] = LAYOUT_split_3x5_2(
@@ -98,12 +98,5 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 }
 
 void keyboard_post_init_user(void) {
-  // Initialize RGB to static black
   rgblight_enable_noeeprom();
-  rgblight_sethsv_noeeprom(HSV_BLACK);
-  rgblight_mode_noeeprom(RGBLIGHT_MODE_STATIC_LIGHT);
-}
-
-void housekeeping_task_user(void) {
-  rgblight_setrgb_at(255, 0, 0, 0);
 }

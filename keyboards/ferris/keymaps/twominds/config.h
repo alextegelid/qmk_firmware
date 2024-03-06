@@ -59,7 +59,12 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
   #define WS2812_BYTE_ORDER WS2812_BYTE_ORDER_GRB
   #define RGBLED_NUM 2
   #define RGBLED_SPLIT {1, 1}
+
+  #define RGBLIGHT_DEFAULT_ON 1
   #define RGBLIGHT_DEFAULT_MODE RGBLIGHT_MODE_STATIC_LIGHT
-  #define RGBLIGHT_DEFAULT_HUE 0
-  #define RGBLIGHT_DEFAULT_SAT UINT8_MAX
+  #define RGBLIGHT_DEFAULT_HUE 43
+  #define RGBLIGHT_DEFAULT_SAT 255
+  #define RGBLIGHT_DEFAULT_VAL RGBLIGHT_LIMIT_VAL
+
+  #define RGBLIGHT_SLEEP 1
 #endif
