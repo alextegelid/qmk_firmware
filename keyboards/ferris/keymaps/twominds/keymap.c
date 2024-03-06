@@ -66,9 +66,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                                _______, _______,         ___X___, SE_0
   ),
   [MISC] = LAYOUT_split_3x5_2(
-    C(KC_1), _______, ZOOMOUT, ZOOMIN,  _______,         DF(GAME), _______, RGB_HUI, KC_BRIU, KC_VOLU,
-    SCRNCAP, _______, _______, PASSWRD, _______,         _______,  _______, RGB_HUD, KC_BRID, KC_VOLD,
-    WINMNGR, _______, _______, _______, _______,         DF(QWER), _______, RGB_TOG, _______, KC_MPLY,
+    C(KC_1), _______, ZOOMOUT, ZOOMIN,  _______,         DF(GAME), RGB_VAI, RGB_HUI, KC_BRIU, KC_VOLU,
+    SCRNCAP, _______, _______, PASSWRD, _______,         _______,  RGB_VAD, RGB_HUD, KC_BRID, KC_VOLD,
+    WINMNGR, _______, _______, _______, _______,         DF(QWER), RGB_MOD, RGB_TOG, _______, KC_MPLY,
                                _______, _______,         ___X___,  _______
   ),
   [GAME] = LAYOUT_split_3x5_2(
@@ -131,16 +131,6 @@ const rgblight_segment_t* const PROGMEM my_rgb_layers[] = RGBLIGHT_LAYERS_LIST(
 void keyboard_post_init_user(void) {
   rgblight_layers = my_rgb_layers;
   rgblight_enable_noeeprom();
-};
-
-bool led_update_user(led_t led_state) {
-  if (led_state.caps_lock) {
-    rgblight_set_layer_state(0, true);
-    rgblight_mode_noeeprom(5);
-  } else {
-    rgblight_mode_noeeprom(14);
-  }
-  return true;
 };
 
 layer_state_t layer_state_set_user(layer_state_t state) {

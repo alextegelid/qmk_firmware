@@ -66,6 +66,9 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
   #define RGBLIGHT_DEFAULT_SAT 255
   #define RGBLIGHT_DEFAULT_VAL RGBLIGHT_LIMIT_VAL
 
+  #define RGBLIGHT_EFFECT_RAINBOW_MOOD
+  #define RGBLIGHT_EFFECT_STATIC_LIGHT
+  #define RGBLIGHT_EFFECT_BREATHING
   #define RGBLIGHT_LAYERS
 
   #define RGBLIGHT_SLEEP
