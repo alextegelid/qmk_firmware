@@ -17,7 +17,6 @@
 
 // Misc keys
 #define SCRNCAP LSG(KC_4)
-#define WINMNGR MEH(SE_C)
 #define ZOOMIN G(KC_PPLS)
 #define ZOOMOUT G(SE_MINS)
 #define PASSWRD G(SE_QUOT)
@@ -58,4 +57,3 @@
 #define QWER_COMM LALT_T(SE_COMM)
 #define QWER_DOT LCTL_T(SE_DOT)
 #define QWER_MINS SE_MINS
-
