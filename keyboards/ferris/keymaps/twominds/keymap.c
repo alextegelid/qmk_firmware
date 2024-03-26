@@ -32,7 +32,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [TYPE] = LAYOUT_split_3x5_2(
     _______, _______, _______, _______, LSG(KC_7),       _______, _______, _______, KC_DEL,  KC_BSPC,
     _______, _______, _______, _______, _______,         CW_TOGG, KC_HOME, KC_END,  _______, ___X___,
-    _______, _______, _______, _______, _______,         _______, _______, _______, KC_PGUP, KC_PGDN,
+    C(KC_1), _______, _______, _______, _______,         _______, _______, _______, KC_PGUP, KC_PGDN,
                                _______, ___X___,         KC_TAB,  S(KC_TAB)
   ),
   [NAV1] = LAYOUT_split_3x5_2(
@@ -66,7 +66,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                                _______, _______,         ___X___, SE_0
   ),
   [MISC] = LAYOUT_split_3x5_2(
-    C(KC_1), _______, ZOOMOUT, ZOOMIN,  _______,         DF(GAME), RGB_VAI, RGB_HUI, KC_BRIU, KC_VOLU,
+    _______, _______, ZOOMOUT, ZOOMIN,  _______,         DF(GAME), RGB_VAI, RGB_HUI, KC_BRIU, KC_VOLU,
     SCRNCAP, _______, _______, PASSWRD, _______,         _______,  RGB_VAD, RGB_HUD, KC_BRID, KC_VOLD,
     WINMNGR, _______, _______, _______, _______,         DF(QWER), RGB_MOD, RGB_TOG, _______, KC_MPLY,
                                _______, _______,         ___X___,  _______
