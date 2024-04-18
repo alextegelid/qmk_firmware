@@ -22,6 +22,14 @@
 #define PASSWRD G(SE_QUOT)
 #define MUTEDISC LCAG(SE_M)
 
+// Window management keys
+#define WINM_C LCAG(KC_C)
+#define WINM_V LCAG(KC_V)
+#define WINMUP LCAG(KC_UP)
+#define WINMDN LCAG(KC_DOWN)
+#define WINMLT LCAG(KC_LEFT)
+#define WINMRT LCAG(KC_RGHT)
+
 // QWER layer keys row 1
 #define QWER_Q SE_Q
 #define QWER_W SE_W
@@ -47,7 +55,7 @@
 #define QWER_ODIA LSFT_T(SE_ODIA)
 
 //  QWER layer keys row 3
-#define QWER_Z LCAG_T(SE_Z)
+#define QWER_Z LT(WINM,SE_Z)
 #define QWER_X LCTL_T(SE_X)
 #define QWER_C LALT_T(SE_C)
 #define QWER_V SE_V

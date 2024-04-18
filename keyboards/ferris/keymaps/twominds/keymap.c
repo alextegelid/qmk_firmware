@@ -9,6 +9,7 @@
 enum layers {
   QWER,
   TYPE,
+  WINM,
   NAV1,
   SYM1,
   SYM2,
@@ -34,6 +35,12 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     _______, _______, _______, _______, _______,         CW_TOGG, KC_HOME, KC_END,  _______, ___X___,
     C(KC_1), _______, _______, _______, _______,         _______, _______, _______, KC_PGUP, KC_PGDN,
                                _______, ___X___,         KC_TAB,  S(KC_TAB)
+  ),
+  [WINM] = LAYOUT_split_3x5_2(
+    ___X___, ___X___, WINMUP,  ___X___, ___X___,         ___X___, ___X___, ___X___, ___X___, ___X___,
+    ___X___, WINMLT,  WINMDN,  WINMRT,  ___X___,         ___X___, ___X___, ___X___, ___X___, ___X___,
+    ___X___, ___X___, WINM_C,  WINM_V,  ___X___,         ___X___, ___X___, ___X___, ___X___, ___X___,
+                               ___X___, ___X___,         ___X___, ___X___
   ),
   [NAV1] = LAYOUT_split_3x5_2(
     ___X___, ___X___, KC_UP,   ___X___, ___X___,         ___X___, ___X___, ___X___,    ___X___,    ___X___,
