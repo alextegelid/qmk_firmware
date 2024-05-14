@@ -26,6 +26,7 @@
 #define WINM_C LCAG(KC_C)
 #define WINM_V LCAG(KC_V)
 #define WINM_T LCAG(KC_T)
+#define WINM_R LCAG(KC_R)
 #define WINMUP LCAG(KC_UP)
 #define WINMDN LCAG(KC_DOWN)
 #define WINMLT LCAG(KC_LEFT)

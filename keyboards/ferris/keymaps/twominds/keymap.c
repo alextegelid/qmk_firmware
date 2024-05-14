@@ -37,7 +37,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                                _______, ___X___,         KC_TAB,  S(KC_TAB)
   ),
   [WINM] = LAYOUT_split_3x5_2(
-    ___X___, ___X___, WINMUP,  ___X___, WINM_T,          ___X___, ___X___, ___X___, ___X___, ___X___,
+    ___X___, ___X___, WINMUP,  WINM_R,  WINM_T,          ___X___, ___X___, ___X___, ___X___, ___X___,
     ___X___, WINMLT,  WINMDN,  WINMRT,  ___X___,         ___X___, ___X___, ___X___, ___X___, ___X___,
     ___X___, ___X___, WINM_C,  WINM_V,  ___X___,         ___X___, ___X___, ___X___, ___X___, ___X___,
                                ___X___, ___X___,         ___X___, ___X___
