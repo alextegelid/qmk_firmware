@@ -16,6 +16,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
 #pragma once
+
+// Set handedness to be read from EEPROM
+#define EE_HANDS
+
 // Set the mouse settings to a comfortable speed/accuracy trade-off,-
 // assuming a screen refresh rate of 60 Htz or higher
 // The default is 50. This makes the mouse ~3 times faster and more accurate
@@ -58,7 +62,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
   #undef RGBLED_SPLIT
   #define WS2812_DI_PIN C7 
   #define WS2812_BYTE_ORDER WS2812_BYTE_ORDER_GRB
-  #define RGBLED_NUM 2
+  #define RGBLIGHT_LED_COUNT 2
   #define RGBLED_SPLIT {1, 1}
 
   #define RGBLIGHT_DEFAULT_ON 1

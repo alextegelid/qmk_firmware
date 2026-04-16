@@ -1,5 +1,5 @@
 #include QMK_KEYBOARD_H
-#include "keymap_swedish_pro_mac_iso.h"
+#include "keymap_swedish_pro_mac_ansi.h"
 #include "keycodes.h"
 
 #include "swapper.c"
@@ -73,9 +73,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                                _______, _______,         ___X___, SE_0
   ),
   [MISC] = LAYOUT_split_3x5_2(
-    _______, _______, ZOOMOUT, ZOOMIN,  _______,         DF(GAME), RGB_VAI, RGB_HUI, KC_BRIU, KC_VOLU,
-    SCRNCAP, _______, _______, PASSWRD, _______,         _______,  RGB_VAD, RGB_HUD, KC_BRID, KC_VOLD,
-    _______, _______, _______, _______, _______,         DF(QWER), RGB_TOG, RGB_MOD, _______, KC_MPLY,
+    _______, _______, ZOOMOUT, ZOOMIN,  _______,         DF(GAME), UG_VALU, UG_HUEU, KC_BRIU, KC_VOLU,
+    SCRNCAP, _______, _______, PASSWRD, _______,         _______,  UG_VALD, UG_HUED, KC_BRID, KC_VOLD,
+    _______, _______, _______, _______, _______,         DF(QWER), UG_TOGG, UG_NEXT, _______, KC_MPLY,
                                _______, _______,         ___X___,  _______
   ),
   [GAME] = LAYOUT_split_3x5_2(
